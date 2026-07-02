@@ -1,0 +1,69 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-07-01T00:00:00+00:00\n"
+"PO-Revision-Date: 2026-07-01T00:00:00+00:00\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "plugins.generic.crossref.displayName"
+msgstr "Plugin Gerenciador Crossref"
+
+msgid "plugins.generic.crossref.description"
+msgstr "Deposita DOIs e metadados de livros e capítulos na Crossref."
+
+msgid "plugins.generic.crossref.registrationAgency.name"
+msgstr "Crossref"
+
+msgid "plugins.generic.crossref.successMessage"
+msgstr "A submissão foi aceita pela Crossref com o ID de submissão {$submissionId}. O depósito pode levar alguns minutos para ser totalmente processado."
+
+msgid "plugins.importexport.crossref.displayName"
+msgstr "Plugin de Exportação Crossref XML"
+
+msgid "plugins.importexport.crossref.description"
+msgstr "Exporta metadados de livros e capítulos no formato XML da Crossref."
+
+msgid "plugins.importexport.crossref.settings"
+msgstr "Configurações da Crossref"
+
+msgid "plugins.importexport.crossref.settings.depositorIntro"
+msgstr "Os itens a seguir são obrigatórios para um depósito bem-sucedido na Crossref."
+
+msgid "plugins.importexport.crossref.registrationIntro"
+msgstr "Se você deseja usar este plugin para registrar Identificadores de Objeto Digital (DOIs) diretamente na Crossref, precisará de um usuário e senha (fornecidos pela equipe de suporte da Crossref). Se você não tiver seu próprio usuário e senha, ainda poderá exportar no formato XML da Crossref, mas não poderá registrar seus DOIs na Crossref a partir do OMP."
+
+msgid "plugins.importexport.crossref.settings.form.depositorName"
+msgstr "Nome do depositante"
+
+msgid "plugins.importexport.crossref.settings.form.depositorName.description"
+msgstr "O nome da organização que registra os DOIs."
+
+msgid "plugins.importexport.crossref.settings.form.depositorEmail"
+msgstr "E-mail do depositante"
+
+msgid "plugins.importexport.crossref.settings.form.depositorEmail.description"
+msgstr "O endereço de e-mail para o qual a Crossref enviará confirmações de depósito e avisos de erro."
+
+msgid "plugins.importexport.crossref.settings.form.username"
+msgstr "Usuário"
+
+msgid "plugins.importexport.crossref.settings.form.username.description"
+msgstr "Seu usuário (papel) da Crossref utilizado para depositar DOIs."
+
+msgid "plugins.importexport.crossref.settings.form.testMode.description"
+msgstr "Usar o ambiente de teste (sandbox) da Crossref em vez do sistema de produção ao depositar DOIs. Lembre-se de desativar esta opção em produção."
+
+msgid "plugins.importexport.crossref.error.publisherNotConfigured"
+msgstr "A editora não foi configurada. Você deve informar uma <a href=\"{$contextSettingsUrl}\">editora</a> nas configurações da editora antes de depositar na Crossref."
+
+msgid "plugins.importexport.crossref.register.error.mdsError"
+msgstr "O depósito não foi bem-sucedido. O servidor da Crossref retornou um erro. Verifique o status do depósito para mais detalhes."
+
+msgid "plugins.importexport.crossref.register.success.warning"
+msgstr "O depósito foi bem-sucedido, mas a Crossref retornou um ou mais avisos: {$param}"
