@@ -22,8 +22,10 @@ like in OJS.
 | OMP version | Branch | Plugin release |
 |-------------|--------|----------------|
 | OMP 3.5.x   | [`stable-3_5_0`](../../tree/stable-3_5_0) *(default)* | 1.0.0.0 |
+| OMP 3.4.x   | [`stable-3_4_0`](../../tree/stable-3_4_0) | 1.0.0.0 |
 
-Tested on OMP 3.5.0-4.
+Tested on OMP 3.5.0-4. The DOI registration-agency framework is shared by pkp-lib and has
+the same contract in OMP 3.4 and 3.5, so both branches share the same implementation.
 
 ## Requirements
 
