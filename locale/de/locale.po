@@ -1,0 +1,69 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: OJSBR <eder@sotto.com.br>\n"
+"Language-Team: OJSBR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-07-16T00:00:00+00:00\n"
+"PO-Revision-Date: 2026-07-16T00:00:00+00:00\n"
+"Language: de\n"
+
+msgid "plugins.generic.crossref.displayName"
+msgstr "Crossref-Manager-Plugin"
+
+msgid "plugins.generic.crossref.description"
+msgstr "Hinterlegt DOIs und Metadaten von Monografien und Kapiteln bei Crossref."
+
+msgid "plugins.generic.crossref.registrationAgency.name"
+msgstr "Crossref"
+
+msgid "plugins.generic.crossref.successMessage"
+msgstr "Die Einreichung wurde von Crossref mit der Einreichungs-ID {$submissionId} akzeptiert. Es kann einige Minuten dauern, bis der Eintrag vollständig verarbeitet ist."
+
+msgid "plugins.importexport.crossref.displayName"
+msgstr "Crossref-XML-Export-Plugin"
+
+msgid "plugins.importexport.crossref.description"
+msgstr "Exportiert Metadaten von Monografien und Kapiteln im Crossref-XML-Format."
+
+msgid "plugins.importexport.crossref.settings"
+msgstr "Crossref-Einstellungen"
+
+msgid "plugins.importexport.crossref.settings.depositorIntro"
+msgstr "Die folgenden Angaben sind für einen erfolgreichen Eintrag bei Crossref erforderlich."
+
+msgid "plugins.importexport.crossref.registrationIntro"
+msgstr "Wenn Sie dieses Plugin verwenden möchten, um Digital Object Identifiers (DOIs) direkt bei Crossref zu registrieren, benötigen Sie einen Benutzernamen und ein Passwort (erhältlich beim Crossref-Support). Wenn Sie keinen eigenen Benutzernamen und kein eigenes Passwort haben, können Sie weiterhin in das Crossref-XML-Format exportieren, aber Ihre DOIs nicht direkt aus OMP heraus bei Crossref registrieren."
+
+msgid "plugins.importexport.crossref.settings.form.depositorName"
+msgstr "Name des Hinterlegers"
+
+msgid "plugins.importexport.crossref.settings.form.depositorName.description"
+msgstr "Der Name der Organisation, die die DOIs registriert."
+
+msgid "plugins.importexport.crossref.settings.form.depositorEmail"
+msgstr "E-Mail des Hinterlegers"
+
+msgid "plugins.importexport.crossref.settings.form.depositorEmail.description"
+msgstr "Die E-Mail-Adresse, an die Crossref Einreichungsbestätigungen und Fehlermeldungen sendet."
+
+msgid "plugins.importexport.crossref.settings.form.username"
+msgstr "Benutzername"
+
+msgid "plugins.importexport.crossref.settings.form.username.description"
+msgstr "Ihr Crossref-Benutzername (Rolle), der zum Hinterlegen von DOIs verwendet wird."
+
+msgid "plugins.importexport.crossref.settings.form.testMode.description"
+msgstr "Verwenden Sie beim Hinterlegen von DOIs die Crossref-Testumgebung (Sandbox) anstelle des Live-Systems. Denken Sie daran, diese Option für den Produktivbetrieb zu deaktivieren."
+
+msgid "plugins.importexport.crossref.error.publisherNotConfigured"
+msgstr "Der Verlag der Press wurde nicht konfiguriert. Sie müssen in den Press-Einstellungen einen <a href=\"{$contextSettingsUrl}\">Verlag</a> angeben, bevor Sie bei Crossref hinterlegen können."
+
+msgid "plugins.importexport.crossref.register.error.mdsError"
+msgstr "Der Eintrag war nicht erfolgreich. Der Crossref-Server hat einen Fehler zurückgegeben. Bitte prüfen Sie den Eintragsstatus für weitere Details."
+
+msgid "plugins.importexport.crossref.register.success.warning"
+msgstr "Der Eintrag war erfolgreich, aber Crossref hat eine oder mehrere Warnungen zurückgegeben: {$param}"
