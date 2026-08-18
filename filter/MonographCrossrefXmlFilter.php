@@ -204,7 +204,7 @@ class MonographCrossrefXmlFilter extends NativeExportFilter
         if ($context->isDoiTypeEnabled(Repo::doi()::TYPE_PUBLICATION) && $publication->getDoi()) {
             $request = Application::get()->getRequest();
             $dispatcher = $this->_getDispatcher($request);
-            $url = $dispatcher->url($request, PKPApplication::ROUTE_PAGE, $context->getPath(), 'catalog', 'book', [$submission->getBestId()], urlLocaleForPage: '');
+            $url = $dispatcher->url($request, PKPApplication::ROUTE_PAGE, $context->getPath(), 'catalog', 'book', [$submission->getBestId()]);
             $bookMetadataNode->appendChild($this->createDoiDataNode($doc, $publication->getDoi(), $url));
         }
 
@@ -281,7 +281,7 @@ class MonographCrossrefXmlFilter extends NativeExportFilter
         // 5. doi_data (required for content_item)
         $request = Application::get()->getRequest();
         $dispatcher = $this->_getDispatcher($request);
-        $url = $dispatcher->url($request, PKPApplication::ROUTE_PAGE, $context->getPath(), 'catalog', 'book', [$submission->getBestId(), 'chapter', $chapter->getId()], urlLocaleForPage: '');
+        $url = $dispatcher->url($request, PKPApplication::ROUTE_PAGE, $context->getPath(), 'catalog', 'book', [$submission->getBestId(), 'chapter', $chapter->getId()]);
         $contentItemNode->appendChild($this->createDoiDataNode($doc, $chapter->getDoi(), $url));
 
         return $contentItemNode;
