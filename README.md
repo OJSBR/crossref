@@ -1,10 +1,10 @@
 # Crossref DOI plugin for OMP (OMP 3.4 branch)
 
 [![OMP](https://img.shields.io/badge/OMP-3.4-brightgreen)](https://pkp.sfu.ca/omp/)
-[![Version](https://img.shields.io/badge/version-1.0.0.0-blue)](version.xml)
+[![Version](https://img.shields.io/badge/version-1.0.0.2-blue)](version.xml)
 [![License](https://img.shields.io/badge/license-GPL--3.0-lightgrey)](LICENSE)
 
-**⬇️ Install package:** [OMP 3.5](https://github.com/OJSBR/crossref/releases/download/1.0.0.2-omp3.5/crossref-1.0.0.2-omp3.5.tar.gz) · [OMP 3.4](https://github.com/OJSBR/crossref/releases/download/1.0.0.1-omp3.4/crossref-1.0.0.1-omp3.4.tar.gz) — or browse all [Releases](../../releases).
+**⬇️ Install package:** [OMP 3.5](https://github.com/OJSBR/crossref/releases/download/1.0.0.2-omp3.5/crossref-1.0.0.2-omp3.5.tar.gz) · [OMP 3.4](https://github.com/OJSBR/crossref/releases/download/1.0.0.2-omp3.4/crossref-1.0.0.2-omp3.4.tar.gz) — or browse all [Releases](../../releases).
 
 > **This is the `stable-3_4_0` branch (OMP 3.4).** For OMP 3.5 use the
 > [`stable-3_5_0`](../../tree/stable-3_5_0) branch.
@@ -26,8 +26,8 @@ like in OJS.
 
 | OMP version | Branch | Plugin release |
 |-------------|--------|----------------|
-| OMP 3.5.x   | [`stable-3_5_0`](../../tree/stable-3_5_0) *(default)* | 1.0.0.0 |
-| OMP 3.4.x   | [`stable-3_4_0`](../../tree/stable-3_4_0) *(this branch)* | 1.0.0.0 |
+| OMP 3.5.x   | [`stable-3_5_0`](../../tree/stable-3_5_0) *(default)* | 1.0.0.2 |
+| OMP 3.4.x   | [`stable-3_4_0`](../../tree/stable-3_4_0) *(this branch)* | 1.0.0.2 |
 
 The DOI registration-agency framework (`IDoiRegistrationAgency`, `Repo::doi()`) is shared by
 pkp-lib and is present in OMP 3.4 and 3.5 with the same contract, so both branches share the
@@ -72,6 +72,17 @@ are shown per item.
 - ISBNs are taken from the monograph's publication formats (ONIX ISBN-13/ISBN-10); a
   `<noisbn reason="monograph"/>` is emitted when none are present.
 - Metadata is exported in the publication's own locale.
+
+## Changelog
+
+### 1.0.0.2 (2026-08-18) — OMP 3.4
+
+- **Fix (fatal on export):** removed the `urlLocaleForPage: ''` named argument from the two
+  `Dispatcher::url()` calls in `filter/MonographCrossrefXmlFilter.php` (monograph and chapter
+  `<resource>` nodes). That parameter only exists in newer pkp-lib; on OMP 3.4 an unknown
+  named argument is a fatal error, so **every** monograph/chapter DOI export threw
+  `Unknown named parameter $urlLocaleForPage`. The generated `<resource>` URL is unchanged
+  (`.../catalog/book/{id}`), because OMP does not add a locale segment to catalog paths.
 
 ## Credits & authorship
 
