@@ -336,14 +336,53 @@ class MonographCrossrefXmlFilter extends NativeExportFilter
                 $personNameNode->appendChild($doc->createElementNS($namespace, 'given_name', htmlspecialchars(substr($givenName, 0, 60), ENT_COMPAT, 'UTF-8')));
             }
             $personNameNode->appendChild($doc->createElementNS($namespace, 'surname', htmlspecialchars(substr($surname, 0, 60), ENT_COMPAT, 'UTF-8')));
-            if (method_exists($author, 'getOrcid') && ($orcid = $author->getOrcid())) {
-                $personNameNode->appendChild($doc->createElementNS($namespace, 'ORCID', htmlspecialchars($orcid, ENT_COMPAT, 'UTF-8')));
+            if ($orcid = $this->getDepositableOrcid($author)) {
+                $orcidNode = $doc->createElementNS($namespace, 'ORCID');
+                $orcidNode->setAttribute('authenticated', $author->getData('orcidIsVerified') ? 'true' : 'false');
+                $orcidNode->appendChild($doc->createTextNode($orcid));
+                $personNameNode->appendChild($orcidNode);
             }
             $contributorsNode->appendChild($personNameNode);
             $isFirst = false;
         }
 
         return $contributorsNode;
+    }
+
+    /**
+     * Return the ORCID iD that may be deposited for an author, or null when it must be skipped.
+     *
+     * The Crossref schema (`orcid_t`) only accepts `https?://orcid.org/NNNN-NNNN-NNNN-NNNX`.
+     * Any other value - most notably the ORCID Sandbox iD that OJS/OMP stores as
+     * `https://sandbox.orcid.org/...` when the ORCID integration runs against the sandbox
+     * API - fails schema validation and aborts the whole export.
+     *
+     * Sandbox iDs are therefore rewritten to the production host while the plugin is in test
+     * mode, so the Sandbox -> OMP -> Crossref workflow can be exercised against
+     * test.crossref.org, and dropped otherwise, so that a sandbox iD is never deposited
+     * against a live DOI. Anything else that does not match the schema is dropped as well,
+     * instead of taking the export down with it.
+     *
+     * @param \PKP\author\Author $author
+     */
+    protected function getDepositableOrcid($author): ?string
+    {
+        $orcid = trim((string) $author->getData('orcid'));
+        if ($orcid === '') {
+            return null;
+        }
+        if (preg_match('#^https?://orcid\.org/\d{4}-\d{4}-\d{4}-\d{3}[\dX]$#', $orcid)) {
+            return $orcid;
+        }
+        if (preg_match('#^https?://sandbox\.orcid\.org/(\d{4}-\d{4}-\d{4}-\d{3}[\dX])$#', $orcid, $matches)) {
+            $deployment = $this->getDeployment();
+            $plugin = $deployment->getPlugin();
+            $context = $deployment->getContext();
+            if ($plugin && $context && $plugin->getSetting($context->getId(), 'testMode')) {
+                return 'https://orcid.org/' . $matches[1];
+            }
+        }
+        return null;
     }
 
     /**
