@@ -1,0 +1,85 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: OJSBR\n"
+"Language-Team: OJSBR\n"
+"Language: hy\n"
+
+
+#, fuzzy
+msgid "plugins.generic.crossref.displayName"
+msgstr "Crossref կառավարչի հավելված"
+
+#, fuzzy
+msgid "plugins.generic.crossref.description"
+msgstr "Ավանդում է մենագրությունների և գլուխների DOI-ներն ու մետատվյալները Crossref-ում։"
+
+#, fuzzy
+msgid "plugins.generic.crossref.registrationAgency.name"
+msgstr "Crossref"
+
+#, fuzzy
+msgid "plugins.generic.crossref.successMessage"
+msgstr "Crossref-ը ընդունեց ներկայացումը {$submissionId} նույնացուցիչով։ Մշակումը կարող է տևել մի քանի րոպե։"
+
+#, fuzzy
+msgid "plugins.importexport.crossref.displayName"
+msgstr "Crossref XML արտահանման հավելված"
+
+#, fuzzy
+msgid "plugins.importexport.crossref.description"
+msgstr "Արտահանում է մենագրությունների և գլուխների մետատվյալները Crossref XML ձևաչափով։"
+
+#, fuzzy
+msgid "plugins.importexport.crossref.settings"
+msgstr "Crossref-ի կարգավորումներ"
+
+#, fuzzy
+msgid "plugins.importexport.crossref.settings.depositorIntro"
+msgstr "Crossref-ում հաջող ավանդի համար պահանջվում են հետևյալ տարրերը։"
+
+#, fuzzy
+msgid "plugins.importexport.crossref.registrationIntro"
+msgstr "Եթե ցանկանում եք այս հավելումով DOI-ներ գրանցել անմիջապես Crossref-ում, ձեզ պետք են օգտվողի անուն և գաղտնաբառ։ Առանց դրանց էլ կարող եք արտահանել XML ֆայլը և վերբեռնել Crossref։"
+
+#, fuzzy
+msgid "plugins.importexport.crossref.settings.form.depositorName"
+msgstr "Ավանդատուի անունը"
+
+#, fuzzy
+msgid "plugins.importexport.crossref.settings.form.depositorName.description"
+msgstr "DOI-ները գրանցող կազմակերպության անվանումը։"
+
+#, fuzzy
+msgid "plugins.importexport.crossref.settings.form.depositorEmail"
+msgstr "Ավանդատուի էլ. փոստը"
+
+#, fuzzy
+msgid "plugins.importexport.crossref.settings.form.depositorEmail.description"
+msgstr "Էլ. փոստի հասցեն, որին Crossref-ը կուղարկի ավանդի հաստատումներ և սխալի ծանուցումներ։"
+
+#, fuzzy
+msgid "plugins.importexport.crossref.settings.form.username"
+msgstr "Օգտվողի անուն"
+
+#, fuzzy
+msgid "plugins.importexport.crossref.settings.form.username.description"
+msgstr "Ձեր Crossref-ի օգտվողի անունը (դերը), որով ավանդվում են DOI-ները։"
+
+#, fuzzy
+msgid "plugins.importexport.crossref.settings.form.testMode.description"
+msgstr "DOI-ներ ավանդելիս օգտագործեք Crossref-ի փորձնական միջավայրը (sandbox) կենդանի համակարգի փոխարեն։ Չմոռանաք անջատել այն արտադրական աշխատանքից առաջ։"
+
+#, fuzzy
+msgid "plugins.importexport.crossref.error.publisherNotConfigured"
+msgstr "Հրատարակիչը կարգավորված չէ։ Դուք պետք է մուտքագրեք հրատարակիչ <a href=\"{$contextSettingsUrl}\">հրատարակչության կարգավորումներում</a>։"
+
+#, fuzzy
+msgid "plugins.importexport.crossref.register.error.mdsError"
+msgstr "Ավանդը չհաջողվեց։ Crossref-ի սերվերը սխալ վերադարձրեց։ Խնդրում ենք ստուգել ավանդի կարգավիճակը։"
+
+#, fuzzy
+msgid "plugins.importexport.crossref.register.success.warning"
+msgstr "Ավանդը հաջողվեց, սակայն Crossref-ը վերադարձրեց մեկ կամ մի քանի նախազգուշացում՝ {$param}"

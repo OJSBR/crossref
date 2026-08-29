@@ -1,10 +1,10 @@
 # Crossref DOI plugin for OMP (Open Monograph Press)
 
 [![OMP](https://img.shields.io/badge/OMP-3.5-brightgreen)](https://pkp.sfu.ca/omp/)
-[![Version](https://img.shields.io/badge/version-1.0.0.3-blue)](version.xml)
+[![Version](https://img.shields.io/badge/version-1.0.0.4-blue)](version.xml)
 [![License](https://img.shields.io/badge/license-GPL--3.0-lightgrey)](LICENSE)
 
-**⬇️ Install package:** [OMP 3.5](https://github.com/OJSBR/crossref/releases/download/1.0.0.3-omp3.5/crossref-1.0.0.3-omp3.5.tar.gz) · [OMP 3.4](https://github.com/OJSBR/crossref/releases/download/1.0.0.3-omp3.4/crossref-1.0.0.3-omp3.4.tar.gz) — or browse all [Releases](../../releases).
+**⬇️ Install package:** [OMP 3.5](https://github.com/OJSBR/crossref/releases/download/1.0.0.4/crossref-1.0.0.4.tar.gz) · [OMP 3.4](https://github.com/OJSBR/crossref/releases/download/1.0.0.3-omp3.4/crossref-1.0.0.3-omp3.4.tar.gz) — or browse all [Releases](../../releases).
 
 Registers monograph and chapter DOIs with [Crossref](https://www.crossref.org/) and exports
 the corresponding Crossref *book deposit* XML (schema 5.3.1).
@@ -23,7 +23,7 @@ like in OJS.
 
 | OMP version | Branch | Plugin release |
 |-------------|--------|----------------|
-| OMP 3.5.x   | [`stable-3_5_0`](../../tree/stable-3_5_0) *(default)* | 1.0.0.3 |
+| OMP 3.5.x   | [`stable-3_5_0`](../../tree/stable-3_5_0) *(default)* | 1.0.0.4 |
 | OMP 3.4.x   | [`stable-3_4_0`](../../tree/stable-3_4_0) | 1.0.0.3 |
 
 Tested on OMP 3.5.0-4. The DOI registration-agency framework is shared by pkp-lib and has

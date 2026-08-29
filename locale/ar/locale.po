@@ -1,0 +1,85 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: OJSBR\n"
+"Language-Team: OJSBR\n"
+"Language: ar\n"
+
+
+#, fuzzy
+msgid "plugins.generic.crossref.displayName"
+msgstr "ملحق إدارة Crossref"
+
+#, fuzzy
+msgid "plugins.generic.crossref.description"
+msgstr "إيداع معرّفات DOI والبيانات الوصفية للكتب والفصول لدى Crossref."
+
+#, fuzzy
+msgid "plugins.generic.crossref.registrationAgency.name"
+msgstr "Crossref"
+
+#, fuzzy
+msgid "plugins.generic.crossref.successMessage"
+msgstr "قَبِل Crossref الطلب برقم {$submissionId}. وقد يستغرق الأمر بضع دقائق حتى تكتمل المعالجة."
+
+#, fuzzy
+msgid "plugins.importexport.crossref.displayName"
+msgstr "ملحق تصدير Crossref XML"
+
+#, fuzzy
+msgid "plugins.importexport.crossref.description"
+msgstr "تصدير البيانات الوصفية للكتب والفصول بصيغة Crossref XML."
+
+#, fuzzy
+msgid "plugins.importexport.crossref.settings"
+msgstr "إعدادات Crossref"
+
+#, fuzzy
+msgid "plugins.importexport.crossref.settings.depositorIntro"
+msgstr "العناصر التالية مطلوبة لنجاح الإيداع لدى Crossref."
+
+#, fuzzy
+msgid "plugins.importexport.crossref.registrationIntro"
+msgstr "إن أردت استخدام هذا الملحق لتسجيل معرّفات DOI مباشرةً لدى Crossref، فستحتاج إلى اسم مستخدم وكلمة مرور. ويمكنك مع ذلك تصدير ملف XML وتحميله لدى Crossref من دونهما."
+
+#, fuzzy
+msgid "plugins.importexport.crossref.settings.form.depositorName"
+msgstr "اسم المودِع"
+
+#, fuzzy
+msgid "plugins.importexport.crossref.settings.form.depositorName.description"
+msgstr "اسم المؤسسة التي تسجّل معرّفات DOI."
+
+#, fuzzy
+msgid "plugins.importexport.crossref.settings.form.depositorEmail"
+msgstr "البريد الإلكتروني للمودِع"
+
+#, fuzzy
+msgid "plugins.importexport.crossref.settings.form.depositorEmail.description"
+msgstr "البريد الإلكتروني الذي سيرسل إليه Crossref تأكيدات الإيداع وإشعارات الأخطاء."
+
+#, fuzzy
+msgid "plugins.importexport.crossref.settings.form.username"
+msgstr "اسم المستخدم"
+
+#, fuzzy
+msgid "plugins.importexport.crossref.settings.form.username.description"
+msgstr "اسم مستخدم Crossref (الدور) المستخدَم لإيداع معرّفات DOI."
+
+#, fuzzy
+msgid "plugins.importexport.crossref.settings.form.testMode.description"
+msgstr "استخدم بيئة اختبار Crossref (sandbox) بدل النظام الحيّ عند إيداع معرّفات DOI. تذكّر أن تزيل هذا الخيار قبل الإنتاج."
+
+#, fuzzy
+msgid "plugins.importexport.crossref.error.publisherNotConfigured"
+msgstr "لم يُضبط ناشر دار النشر. عليك إدخال اسم ناشر في <a href=\"{$contextSettingsUrl}\">إعدادات دار النشر</a>."
+
+#, fuzzy
+msgid "plugins.importexport.crossref.register.error.mdsError"
+msgstr "لم ينجح الإيداع. أعاد خادم Crossref خطأً. يرجى مراجعة حالة الإيداع."
+
+#, fuzzy
+msgid "plugins.importexport.crossref.register.success.warning"
+msgstr "نجح الإيداع، لكن Crossref أعاد تحذيراً أو أكثر: {$param}"

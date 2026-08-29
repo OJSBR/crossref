@@ -1,0 +1,85 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: OJSBR\n"
+"Language-Team: OJSBR\n"
+"Language: tr\n"
+
+
+#, fuzzy
+msgid "plugins.generic.crossref.displayName"
+msgstr "Crossref Yöneticisi eklentisi"
+
+#, fuzzy
+msgid "plugins.generic.crossref.description"
+msgstr "Kitap ve bölüm DOI'lerini ve üstverisini Crossref'e gönderir."
+
+#, fuzzy
+msgid "plugins.generic.crossref.registrationAgency.name"
+msgstr "Crossref"
+
+#, fuzzy
+msgid "plugins.generic.crossref.successMessage"
+msgstr "Crossref gönderimi {$submissionId} kimliğiyle kabul etti. İşlemin tamamlanması birkaç dakika sürebilir."
+
+#, fuzzy
+msgid "plugins.importexport.crossref.displayName"
+msgstr "Crossref XML Dışa Aktarma eklentisi"
+
+#, fuzzy
+msgid "plugins.importexport.crossref.description"
+msgstr "Kitap ve bölüm üstverisini Crossref XML biçiminde dışa aktarır."
+
+#, fuzzy
+msgid "plugins.importexport.crossref.settings"
+msgstr "Crossref ayarları"
+
+#, fuzzy
+msgid "plugins.importexport.crossref.settings.depositorIntro"
+msgstr "Crossref'e başarılı bir gönderim için aşağıdakiler gereklidir."
+
+#, fuzzy
+msgid "plugins.importexport.crossref.registrationIntro"
+msgstr "Bu eklentiyle DOI'leri doğrudan Crossref'e kaydetmek istiyorsanız bir kullanıcı adı ve parola gerekir. Bunlar olmadan da XML dosyasını dışa aktarıp Crossref'e yükleyebilirsiniz."
+
+#, fuzzy
+msgid "plugins.importexport.crossref.settings.form.depositorName"
+msgstr "Gönderen kişinin adı"
+
+#, fuzzy
+msgid "plugins.importexport.crossref.settings.form.depositorName.description"
+msgstr "DOI'leri kaydeden kuruluşun adı."
+
+#, fuzzy
+msgid "plugins.importexport.crossref.settings.form.depositorEmail"
+msgstr "Gönderen kişinin e-postası"
+
+#, fuzzy
+msgid "plugins.importexport.crossref.settings.form.depositorEmail.description"
+msgstr "Crossref'in gönderim onaylarını ve hata bildirimlerini göndereceği e-posta adresi."
+
+#, fuzzy
+msgid "plugins.importexport.crossref.settings.form.username"
+msgstr "Kullanıcı adı"
+
+#, fuzzy
+msgid "plugins.importexport.crossref.settings.form.username.description"
+msgstr "DOI göndermek için kullanılan Crossref kullanıcı adınız (rolünüz)."
+
+#, fuzzy
+msgid "plugins.importexport.crossref.settings.form.testMode.description"
+msgstr "DOI gönderirken canlı sistem yerine Crossref test ortamını (sandbox) kullanın. Üretime geçmeden önce kapatmayı unutmayın."
+
+#, fuzzy
+msgid "plugins.importexport.crossref.error.publisherNotConfigured"
+msgstr "Yayınevinin yayıncısı yapılandırılmamış. <a href=\"{$contextSettingsUrl}\">yayınevi ayarlarında</a> bir yayıncı girmelisiniz."
+
+#, fuzzy
+msgid "plugins.importexport.crossref.register.error.mdsError"
+msgstr "Gönderim başarısız oldu. Crossref sunucusu bir hata döndürdü. Lütfen gönderim durumunu denetleyin."
+
+#, fuzzy
+msgid "plugins.importexport.crossref.register.success.warning"
+msgstr "Gönderim başarılı oldu, ancak Crossref bir veya daha fazla uyarı döndürdü: {$param}"

@@ -1,0 +1,85 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: OJSBR\n"
+"Language-Team: OJSBR\n"
+"Language: ja\n"
+
+
+#, fuzzy
+msgid "plugins.generic.crossref.displayName"
+msgstr "Crossref マネージャープラグイン"
+
+#, fuzzy
+msgid "plugins.generic.crossref.description"
+msgstr "モノグラフと章の DOI とメタデータを Crossref に登録します。"
+
+#, fuzzy
+msgid "plugins.generic.crossref.registrationAgency.name"
+msgstr "Crossref"
+
+#, fuzzy
+msgid "plugins.generic.crossref.successMessage"
+msgstr "Crossref が送信を受け付けました（送信 ID: {$submissionId}）。処理の完了まで数分かかることがあります。"
+
+#, fuzzy
+msgid "plugins.importexport.crossref.displayName"
+msgstr "Crossref XML エクスポートプラグイン"
+
+#, fuzzy
+msgid "plugins.importexport.crossref.description"
+msgstr "モノグラフと章のメタデータを Crossref XML 形式でエクスポートします。"
+
+#, fuzzy
+msgid "plugins.importexport.crossref.settings"
+msgstr "Crossref の設定"
+
+#, fuzzy
+msgid "plugins.importexport.crossref.settings.depositorIntro"
+msgstr "Crossref への登録を成功させるには、次の項目が必要です。"
+
+#, fuzzy
+msgid "plugins.importexport.crossref.registrationIntro"
+msgstr "このプラグインで DOI を Crossref に直接登録するには、ユーザー名とパスワードが必要です。それがなくても、XML ファイルを書き出して Crossref にアップロードできます。"
+
+#, fuzzy
+msgid "plugins.importexport.crossref.settings.form.depositorName"
+msgstr "登録者名"
+
+#, fuzzy
+msgid "plugins.importexport.crossref.settings.form.depositorName.description"
+msgstr "DOI を登録する組織の名称。"
+
+#, fuzzy
+msgid "plugins.importexport.crossref.settings.form.depositorEmail"
+msgstr "登録者のメールアドレス"
+
+#, fuzzy
+msgid "plugins.importexport.crossref.settings.form.depositorEmail.description"
+msgstr "Crossref が登録確認やエラー通知を送るメールアドレス。"
+
+#, fuzzy
+msgid "plugins.importexport.crossref.settings.form.username"
+msgstr "ユーザー名"
+
+#, fuzzy
+msgid "plugins.importexport.crossref.settings.form.username.description"
+msgstr "DOI の登録に使う Crossref のユーザー名（ロール）。"
+
+#, fuzzy
+msgid "plugins.importexport.crossref.settings.form.testMode.description"
+msgstr "DOI 登録時に本番システムではなく Crossref のテスト環境（サンドボックス）を使います。本番運用の前に必ずオフにしてください。"
+
+#, fuzzy
+msgid "plugins.importexport.crossref.error.publisherNotConfigured"
+msgstr "出版元が設定されていません。<a href=\"{$contextSettingsUrl}\">出版社の設定</a>で出版元を入力してください。"
+
+#, fuzzy
+msgid "plugins.importexport.crossref.register.error.mdsError"
+msgstr "登録に失敗しました。Crossref サーバーがエラーを返しました。登録状況をご確認ください。"
+
+#, fuzzy
+msgid "plugins.importexport.crossref.register.success.warning"
+msgstr "登録は成功しましたが、Crossref から警告が返されました: {$param}"

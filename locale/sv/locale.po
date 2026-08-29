@@ -1,0 +1,85 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: OJSBR\n"
+"Language-Team: OJSBR\n"
+"Language: sv\n"
+
+
+#, fuzzy
+msgid "plugins.generic.crossref.displayName"
+msgstr "Crossref-hanteringstillägg"
+
+#, fuzzy
+msgid "plugins.generic.crossref.description"
+msgstr "Deponerar DOI:er och metadata för monografier och kapitel hos Crossref."
+
+#, fuzzy
+msgid "plugins.generic.crossref.registrationAgency.name"
+msgstr "Crossref"
+
+#, fuzzy
+msgid "plugins.generic.crossref.successMessage"
+msgstr "Crossref har accepterat inskickningen med id {$submissionId}. Behandlingen kan ta några minuter."
+
+#, fuzzy
+msgid "plugins.importexport.crossref.displayName"
+msgstr "Crossref XML-exporttillägg"
+
+#, fuzzy
+msgid "plugins.importexport.crossref.description"
+msgstr "Exporterar metadata för monografier och kapitel i Crossref XML-format."
+
+#, fuzzy
+msgid "plugins.importexport.crossref.settings"
+msgstr "Crossref-inställningar"
+
+#, fuzzy
+msgid "plugins.importexport.crossref.settings.depositorIntro"
+msgstr "Följande uppgifter krävs för en lyckad deposition hos Crossref."
+
+#, fuzzy
+msgid "plugins.importexport.crossref.registrationIntro"
+msgstr "Vill du använda tillägget för att registrera DOI:er direkt hos Crossref behöver du ett användarnamn och ett lösenord. Utan dem kan du ändå exportera XML-filen och ladda upp den till Crossref."
+
+#, fuzzy
+msgid "plugins.importexport.crossref.settings.form.depositorName"
+msgstr "Deponentens namn"
+
+#, fuzzy
+msgid "plugins.importexport.crossref.settings.form.depositorName.description"
+msgstr "Namnet på organisationen som registrerar DOI:erna."
+
+#, fuzzy
+msgid "plugins.importexport.crossref.settings.form.depositorEmail"
+msgstr "Deponentens e-post"
+
+#, fuzzy
+msgid "plugins.importexport.crossref.settings.form.depositorEmail.description"
+msgstr "E-postadressen dit Crossref skickar depositionsbekräftelser och felmeddelanden."
+
+#, fuzzy
+msgid "plugins.importexport.crossref.settings.form.username"
+msgstr "Användarnamn"
+
+#, fuzzy
+msgid "plugins.importexport.crossref.settings.form.username.description"
+msgstr "Ditt Crossref-användarnamn (roll) som används för att deponera DOI:er."
+
+#, fuzzy
+msgid "plugins.importexport.crossref.settings.form.testMode.description"
+msgstr "Använd Crossrefs testmiljö (sandbox) i stället för produktionssystemet när du deponerar DOI:er. Kom ihåg att stänga av det före produktion."
+
+#, fuzzy
+msgid "plugins.importexport.crossref.error.publisherNotConfigured"
+msgstr "Förlagets utgivare är inte konfigurerad. Du måste ange en utgivare i <a href=\"{$contextSettingsUrl}\">förlagets inställningar</a>."
+
+#, fuzzy
+msgid "plugins.importexport.crossref.register.error.mdsError"
+msgstr "Depositionen misslyckades. Crossref-servern returnerade ett fel. Kontrollera depositionens status."
+
+#, fuzzy
+msgid "plugins.importexport.crossref.register.success.warning"
+msgstr "Depositionen lyckades, men Crossref returnerade en eller flera varningar: {$param}"

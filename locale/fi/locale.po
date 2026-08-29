@@ -1,0 +1,85 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: OJSBR\n"
+"Language-Team: OJSBR\n"
+"Language: fi\n"
+
+
+#, fuzzy
+msgid "plugins.generic.crossref.displayName"
+msgstr "Crossref-hallintalisäosa"
+
+#, fuzzy
+msgid "plugins.generic.crossref.description"
+msgstr "Tallettaa monografioiden ja lukujen DOI-tunnisteet ja metatiedot Crossrefiin."
+
+#, fuzzy
+msgid "plugins.generic.crossref.registrationAgency.name"
+msgstr "Crossref"
+
+#, fuzzy
+msgid "plugins.generic.crossref.successMessage"
+msgstr "Crossref hyväksyi lähetyksen tunnuksella {$submissionId}. Käsittely voi kestää muutaman minuutin."
+
+#, fuzzy
+msgid "plugins.importexport.crossref.displayName"
+msgstr "Crossref XML -vientilisäosa"
+
+#, fuzzy
+msgid "plugins.importexport.crossref.description"
+msgstr "Vie monografioiden ja lukujen metatiedot Crossref XML -muodossa."
+
+#, fuzzy
+msgid "plugins.importexport.crossref.settings"
+msgstr "Crossref-asetukset"
+
+#, fuzzy
+msgid "plugins.importexport.crossref.settings.depositorIntro"
+msgstr "Seuraavat tiedot vaaditaan onnistuneeseen Crossref-talletukseen."
+
+#, fuzzy
+msgid "plugins.importexport.crossref.registrationIntro"
+msgstr "Jos haluat rekisteröidä DOI-tunnisteet suoraan Crossrefiin tällä lisäosalla, tarvitset käyttäjätunnuksen ja salasanan. Ilman niitäkin voit viedä XML-tiedoston ja ladata sen Crossrefiin."
+
+#, fuzzy
+msgid "plugins.importexport.crossref.settings.form.depositorName"
+msgstr "Tallettajan nimi"
+
+#, fuzzy
+msgid "plugins.importexport.crossref.settings.form.depositorName.description"
+msgstr "DOI-tunnisteet rekisteröivän organisaation nimi."
+
+#, fuzzy
+msgid "plugins.importexport.crossref.settings.form.depositorEmail"
+msgstr "Tallettajan sähköposti"
+
+#, fuzzy
+msgid "plugins.importexport.crossref.settings.form.depositorEmail.description"
+msgstr "Sähköpostiosoite, johon Crossref lähettää talletusvahvistukset ja virheilmoitukset."
+
+#, fuzzy
+msgid "plugins.importexport.crossref.settings.form.username"
+msgstr "Käyttäjätunnus"
+
+#, fuzzy
+msgid "plugins.importexport.crossref.settings.form.username.description"
+msgstr "Crossref-käyttäjätunnuksesi (rooli), jota käytetään DOI-talletuksiin."
+
+#, fuzzy
+msgid "plugins.importexport.crossref.settings.form.testMode.description"
+msgstr "Käytä DOI-talletuksissa Crossrefin testiympäristöä (sandbox) tuotantojärjestelmän sijaan. Muista poistaa asetus käytöstä ennen tuotantoa."
+
+#, fuzzy
+msgid "plugins.importexport.crossref.error.publisherNotConfigured"
+msgstr "Kustantamon julkaisijaa ei ole määritetty. Sinun on annettava julkaisija <a href=\"{$contextSettingsUrl}\">kustantamon asetuksissa</a>."
+
+#, fuzzy
+msgid "plugins.importexport.crossref.register.error.mdsError"
+msgstr "Talletus ei onnistunut. Crossref-palvelin palautti virheen. Tarkista talletuksen tila."
+
+#, fuzzy
+msgid "plugins.importexport.crossref.register.success.warning"
+msgstr "Talletus onnistui, mutta Crossref palautti yhden tai useamman varoituksen: {$param}"

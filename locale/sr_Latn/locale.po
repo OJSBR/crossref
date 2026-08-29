@@ -1,0 +1,85 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: OJSBR\n"
+"Language-Team: OJSBR\n"
+"Language: sr_Latn\n"
+
+
+#, fuzzy
+msgid "plugins.generic.crossref.displayName"
+msgstr "Dodatak upravljača Crossref"
+
+#, fuzzy
+msgid "plugins.generic.crossref.description"
+msgstr "Šalje Crossref-u DOI i metapodatke monografija i poglavlja."
+
+#, fuzzy
+msgid "plugins.generic.crossref.registrationAgency.name"
+msgstr "Crossref"
+
+#, fuzzy
+msgid "plugins.generic.crossref.successMessage"
+msgstr "Crossref je prihvatio slanje sa ID {$submissionId}. Obrada može potrajati nekoliko minuta."
+
+#, fuzzy
+msgid "plugins.importexport.crossref.displayName"
+msgstr "Dodatak za izvoz Crossref XML"
+
+#, fuzzy
+msgid "plugins.importexport.crossref.description"
+msgstr "Izvozi metapodatke monografija i poglavlja u formatu Crossref XML."
+
+#, fuzzy
+msgid "plugins.importexport.crossref.settings"
+msgstr "Podešavanja Crossref"
+
+#, fuzzy
+msgid "plugins.importexport.crossref.settings.depositorIntro"
+msgstr "Sledeće stavke su neophodne za uspešan depozit u Crossref."
+
+#, fuzzy
+msgid "plugins.importexport.crossref.registrationIntro"
+msgstr "Ako želite da ovim dodatkom registrujete DOI direktno kod Crossref-a, potrebni su vam korisničko ime i lozinka. I bez toga možete izvesti XML datoteku i otpremiti je u Crossref."
+
+#, fuzzy
+msgid "plugins.importexport.crossref.settings.form.depositorName"
+msgstr "Ime deponenta"
+
+#, fuzzy
+msgid "plugins.importexport.crossref.settings.form.depositorName.description"
+msgstr "Ime organizacije koja registruje DOI."
+
+#, fuzzy
+msgid "plugins.importexport.crossref.settings.form.depositorEmail"
+msgstr "E-adresa deponenta"
+
+#, fuzzy
+msgid "plugins.importexport.crossref.settings.form.depositorEmail.description"
+msgstr "E-adresa na koju će Crossref slati potvrde o depozitu i obaveštenja o greškama."
+
+#, fuzzy
+msgid "plugins.importexport.crossref.settings.form.username"
+msgstr "Korisničko ime"
+
+#, fuzzy
+msgid "plugins.importexport.crossref.settings.form.username.description"
+msgstr "Vaše Crossref korisničko ime (uloga) koje se koristi za slanje DOI."
+
+#, fuzzy
+msgid "plugins.importexport.crossref.settings.form.testMode.description"
+msgstr "Pri slanju DOI koristite Crossref test okruženje (sandbox) umesto produkcionog sistema. Ne zaboravite da ga isključite pre produkcije."
+
+#, fuzzy
+msgid "plugins.importexport.crossref.error.publisherNotConfigured"
+msgstr "Izdavač nije podešen. Morate ga uneti u <a href=\"{$contextSettingsUrl}\">podešavanjima izdavača</a>."
+
+#, fuzzy
+msgid "plugins.importexport.crossref.register.error.mdsError"
+msgstr "Depozit nije uspeo. Crossref server je vratio grešku. Proverite status depozita."
+
+#, fuzzy
+msgid "plugins.importexport.crossref.register.success.warning"
+msgstr "Depozit je uspeo, ali je Crossref vratio jedno ili više upozorenja: {$param}"
