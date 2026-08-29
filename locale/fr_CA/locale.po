@@ -1,0 +1,66 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: OJSBR\n"
+"Language-Team: OJSBR\n"
+"Language: fr_CA\n"
+
+
+msgid "plugins.generic.crossref.displayName"
+msgstr "Module de gestion Crossref"
+
+msgid "plugins.generic.crossref.description"
+msgstr "Dépose auprès de Crossref les DOI et les métadonnées des monographies et des chapitres."
+
+msgid "plugins.generic.crossref.registrationAgency.name"
+msgstr "Crossref"
+
+msgid "plugins.generic.crossref.successMessage"
+msgstr "Crossref a accepté la soumission avec l'identifiant {$submissionId}. Le traitement peut prendre quelques minutes."
+
+msgid "plugins.importexport.crossref.displayName"
+msgstr "Module d'exportation Crossref XML"
+
+msgid "plugins.importexport.crossref.description"
+msgstr "Exporte les métadonnées des monographies et des chapitres au format Crossref XML."
+
+msgid "plugins.importexport.crossref.settings"
+msgstr "Paramètres Crossref"
+
+msgid "plugins.importexport.crossref.settings.depositorIntro"
+msgstr "Les éléments suivants sont nécessaires pour un dépôt réussi auprès de Crossref."
+
+msgid "plugins.importexport.crossref.registrationIntro"
+msgstr "Si vous souhaitez utiliser ce module pour enregistrer des DOI directement auprès de Crossref, il vous faut un nom d'utilisateur et un mot de passe. Sans cela, vous pouvez tout de même exporter le fichier XML et le téléverser vous-même dans Crossref."
+
+msgid "plugins.importexport.crossref.settings.form.depositorName"
+msgstr "Nom du déposant"
+
+msgid "plugins.importexport.crossref.settings.form.depositorName.description"
+msgstr "Le nom de l'organisme qui enregistre les DOI."
+
+msgid "plugins.importexport.crossref.settings.form.depositorEmail"
+msgstr "Courriel du déposant"
+
+msgid "plugins.importexport.crossref.settings.form.depositorEmail.description"
+msgstr "L'adresse courriel à laquelle Crossref enverra les confirmations de dépôt et les avis d'erreur."
+
+msgid "plugins.importexport.crossref.settings.form.username"
+msgstr "Nom d'utilisateur"
+
+msgid "plugins.importexport.crossref.settings.form.username.description"
+msgstr "Votre nom d'utilisateur (rôle) Crossref utilisé pour déposer les DOI."
+
+msgid "plugins.importexport.crossref.settings.form.testMode.description"
+msgstr "Utilisez l'environnement d'essai de Crossref (bac à sable) plutôt que le système en production pour déposer les DOI. N'oubliez pas de le désactiver avant la mise en production."
+
+msgid "plugins.importexport.crossref.error.publisherNotConfigured"
+msgstr "L'éditeur de la maison d'édition n'est pas configuré. Vous devez en saisir un dans les <a href=\"{$contextSettingsUrl}\">paramètres de la maison d'édition</a>."
+
+msgid "plugins.importexport.crossref.register.error.mdsError"
+msgstr "Le dépôt a échoué. Le serveur Crossref a renvoyé une erreur. Veuillez vérifier l'état du dépôt."
+
+msgid "plugins.importexport.crossref.register.success.warning"
+msgstr "Le dépôt a réussi, mais Crossref a renvoyé un ou plusieurs avertissements : {$param}"

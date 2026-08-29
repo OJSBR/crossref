@@ -1,0 +1,85 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: OJSBR\n"
+"Language-Team: OJSBR\n"
+"Language: vi\n"
+
+
+#, fuzzy
+msgid "plugins.generic.crossref.displayName"
+msgstr "Trình cắm quản lý Crossref"
+
+#, fuzzy
+msgid "plugins.generic.crossref.description"
+msgstr "Nộp DOI và siêu dữ liệu của sách chuyên khảo và chương cho Crossref."
+
+#, fuzzy
+msgid "plugins.generic.crossref.registrationAgency.name"
+msgstr "Crossref"
+
+#, fuzzy
+msgid "plugins.generic.crossref.successMessage"
+msgstr "Crossref đã tiếp nhận với mã gửi {$submissionId}. Quá trình xử lý có thể mất vài phút."
+
+#, fuzzy
+msgid "plugins.importexport.crossref.displayName"
+msgstr "Trình cắm xuất Crossref XML"
+
+#, fuzzy
+msgid "plugins.importexport.crossref.description"
+msgstr "Xuất siêu dữ liệu của sách chuyên khảo và chương ở định dạng Crossref XML."
+
+#, fuzzy
+msgid "plugins.importexport.crossref.settings"
+msgstr "Thiết lập Crossref"
+
+#, fuzzy
+msgid "plugins.importexport.crossref.settings.depositorIntro"
+msgstr "Các mục sau là bắt buộc để nộp thành công cho Crossref."
+
+#, fuzzy
+msgid "plugins.importexport.crossref.registrationIntro"
+msgstr "Nếu bạn muốn dùng trình cắm này để đăng ký DOI trực tiếp với Crossref, bạn cần tên đăng nhập và mật khẩu. Không có chúng, bạn vẫn có thể xuất tệp XML và tự tải lên Crossref."
+
+#, fuzzy
+msgid "plugins.importexport.crossref.settings.form.depositorName"
+msgstr "Tên người nộp"
+
+#, fuzzy
+msgid "plugins.importexport.crossref.settings.form.depositorName.description"
+msgstr "Tên tổ chức đăng ký các DOI."
+
+#, fuzzy
+msgid "plugins.importexport.crossref.settings.form.depositorEmail"
+msgstr "Email của người nộp"
+
+#, fuzzy
+msgid "plugins.importexport.crossref.settings.form.depositorEmail.description"
+msgstr "Địa chỉ email mà Crossref sẽ gửi xác nhận nộp và thông báo lỗi."
+
+#, fuzzy
+msgid "plugins.importexport.crossref.settings.form.username"
+msgstr "Tên đăng nhập"
+
+#, fuzzy
+msgid "plugins.importexport.crossref.settings.form.username.description"
+msgstr "Tên đăng nhập (vai trò) Crossref của bạn dùng để nộp DOI."
+
+#, fuzzy
+msgid "plugins.importexport.crossref.settings.form.testMode.description"
+msgstr "Khi nộp DOI, hãy dùng môi trường thử nghiệm của Crossref (sandbox) thay cho hệ thống thật. Nhớ tắt tùy chọn này trước khi chạy chính thức."
+
+#, fuzzy
+msgid "plugins.importexport.crossref.error.publisherNotConfigured"
+msgstr "Chưa cấu hình nhà xuất bản. Bạn phải nhập nhà xuất bản trong <a href=\"{$contextSettingsUrl}\">thiết lập nhà xuất bản</a>."
+
+#, fuzzy
+msgid "plugins.importexport.crossref.register.error.mdsError"
+msgstr "Việc nộp không thành công. Máy chủ Crossref trả về lỗi. Vui lòng kiểm tra trạng thái nộp."
+
+#, fuzzy
+msgid "plugins.importexport.crossref.register.success.warning"
+msgstr "Việc nộp đã thành công, nhưng Crossref trả về một hoặc nhiều cảnh báo: {$param}"

@@ -1,0 +1,66 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: OJSBR\n"
+"Language-Team: OJSBR\n"
+"Language: nl\n"
+
+
+msgid "plugins.generic.crossref.displayName"
+msgstr "Crossref-beheerplug-in"
+
+msgid "plugins.generic.crossref.description"
+msgstr "Deponeert DOI's en metadata van monografieën en hoofdstukken bij Crossref."
+
+msgid "plugins.generic.crossref.registrationAgency.name"
+msgstr "Crossref"
+
+msgid "plugins.generic.crossref.successMessage"
+msgstr "Crossref heeft de indiening geaccepteerd met ID {$submissionId}. De verwerking kan enkele minuten duren."
+
+msgid "plugins.importexport.crossref.displayName"
+msgstr "Crossref XML-exportplug-in"
+
+msgid "plugins.importexport.crossref.description"
+msgstr "Exporteert metadata van monografieën en hoofdstukken in Crossref XML-formaat."
+
+msgid "plugins.importexport.crossref.settings"
+msgstr "Crossref-instellingen"
+
+msgid "plugins.importexport.crossref.settings.depositorIntro"
+msgstr "De volgende gegevens zijn nodig voor een geslaagde depot bij Crossref."
+
+msgid "plugins.importexport.crossref.registrationIntro"
+msgstr "Wilt u met deze plug-in DOI's rechtstreeks bij Crossref registreren, dan hebt u een gebruikersnaam en wachtwoord nodig. Zonder die gegevens kunt u het XML-bestand nog altijd exporteren en zelf bij Crossref uploaden."
+
+msgid "plugins.importexport.crossref.settings.form.depositorName"
+msgstr "Naam van de deponent"
+
+msgid "plugins.importexport.crossref.settings.form.depositorName.description"
+msgstr "De naam van de organisatie die de DOI's registreert."
+
+msgid "plugins.importexport.crossref.settings.form.depositorEmail"
+msgstr "E-mail van de deponent"
+
+msgid "plugins.importexport.crossref.settings.form.depositorEmail.description"
+msgstr "Het e-mailadres waarnaar Crossref bevestigingen van deponeringen en foutmeldingen stuurt."
+
+msgid "plugins.importexport.crossref.settings.form.username"
+msgstr "Gebruikersnaam"
+
+msgid "plugins.importexport.crossref.settings.form.username.description"
+msgstr "Uw Crossref-gebruikersnaam (rol) die wordt gebruikt om DOI's te deponeren."
+
+msgid "plugins.importexport.crossref.settings.form.testMode.description"
+msgstr "Gebruik de testomgeving van Crossref (sandbox) in plaats van het live systeem bij het deponeren van DOI's. Vergeet niet dit uit te zetten voordat u live gaat."
+
+msgid "plugins.importexport.crossref.error.publisherNotConfigured"
+msgstr "De uitgever is niet geconfigureerd. U moet er een invoeren bij de <a href=\"{$contextSettingsUrl}\">instellingen van de uitgeverij</a>."
+
+msgid "plugins.importexport.crossref.register.error.mdsError"
+msgstr "Het deponeren is mislukt. De Crossref-server gaf een fout terug. Controleer de status van het depot."
+
+msgid "plugins.importexport.crossref.register.success.warning"
+msgstr "Het deponeren is gelukt, maar Crossref gaf een of meer waarschuwingen: {$param}"

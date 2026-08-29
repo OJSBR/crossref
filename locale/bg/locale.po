@@ -1,0 +1,85 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: OJSBR\n"
+"Language-Team: OJSBR\n"
+"Language: bg\n"
+
+
+#, fuzzy
+msgid "plugins.generic.crossref.displayName"
+msgstr "Приставка за управление на Crossref"
+
+#, fuzzy
+msgid "plugins.generic.crossref.description"
+msgstr "Депозиране на DOI и метаданни на монографии и глави в Crossref."
+
+#, fuzzy
+msgid "plugins.generic.crossref.registrationAgency.name"
+msgstr "Crossref"
+
+#, fuzzy
+msgid "plugins.generic.crossref.successMessage"
+msgstr "Заявката е приета от Crossref с идентификатор {$submissionId}. Обработката може да отнеме няколко минути."
+
+#, fuzzy
+msgid "plugins.importexport.crossref.displayName"
+msgstr "Приставка за експорт в Crossref XML"
+
+#, fuzzy
+msgid "plugins.importexport.crossref.description"
+msgstr "Експорт на метаданните на монографии и глави във формат Crossref XML."
+
+#, fuzzy
+msgid "plugins.importexport.crossref.settings"
+msgstr "Настройки на Crossref"
+
+#, fuzzy
+msgid "plugins.importexport.crossref.settings.depositorIntro"
+msgstr "Следните елементи са необходими за успешно депозиране в Crossref."
+
+#, fuzzy
+msgid "plugins.importexport.crossref.registrationIntro"
+msgstr "Ако искате да използвате приставката за директна регистрация на DOI в Crossref, ще ви трябват потребителско име и парола. Без тях все пак можете да експортирате XML файла и да го качите в Crossref."
+
+#, fuzzy
+msgid "plugins.importexport.crossref.settings.form.depositorName"
+msgstr "Име на депозитора"
+
+#, fuzzy
+msgid "plugins.importexport.crossref.settings.form.depositorName.description"
+msgstr "Името на организацията, която регистрира DOI."
+
+#, fuzzy
+msgid "plugins.importexport.crossref.settings.form.depositorEmail"
+msgstr "Имейл на депозитора"
+
+#, fuzzy
+msgid "plugins.importexport.crossref.settings.form.depositorEmail.description"
+msgstr "Имейл адресът, на който Crossref ще изпраща потвърждения за депозиране и известия за грешки."
+
+#, fuzzy
+msgid "plugins.importexport.crossref.settings.form.username"
+msgstr "Потребителско име"
+
+#, fuzzy
+msgid "plugins.importexport.crossref.settings.form.username.description"
+msgstr "Вашето потребителско име (роля) в Crossref, използвано за депозиране на DOI."
+
+#, fuzzy
+msgid "plugins.importexport.crossref.settings.form.testMode.description"
+msgstr "Използвайте тестовата среда на Crossref (sandbox) вместо реалната система при депозиране на DOI. Не забравяйте да я изключите преди работа на живо."
+
+#, fuzzy
+msgid "plugins.importexport.crossref.error.publisherNotConfigured"
+msgstr "Издателят на издателството не е конфигуриран. Трябва да въведете издател в <a href=\"{$contextSettingsUrl}\">настройките на издателството</a>."
+
+#, fuzzy
+msgid "plugins.importexport.crossref.register.error.mdsError"
+msgstr "Депозирането не беше успешно. Сървърът на Crossref върна грешка. Моля, проверете състоянието на депозирането."
+
+#, fuzzy
+msgid "plugins.importexport.crossref.register.success.warning"
+msgstr "Депозирането е успешно, но Crossref върна едно или повече предупреждения: {$param}"

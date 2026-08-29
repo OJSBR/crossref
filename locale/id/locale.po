@@ -1,0 +1,85 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: OJSBR\n"
+"Language-Team: OJSBR\n"
+"Language: id\n"
+
+
+#, fuzzy
+msgid "plugins.generic.crossref.displayName"
+msgstr "Plugin Pengelola Crossref"
+
+#, fuzzy
+msgid "plugins.generic.crossref.description"
+msgstr "Menyetorkan DOI dan metadata monograf serta bab ke Crossref."
+
+#, fuzzy
+msgid "plugins.generic.crossref.registrationAgency.name"
+msgstr "Crossref"
+
+#, fuzzy
+msgid "plugins.generic.crossref.successMessage"
+msgstr "Crossref menerima pengiriman dengan ID {$submissionId}. Pemrosesan bisa memakan waktu beberapa menit."
+
+#, fuzzy
+msgid "plugins.importexport.crossref.displayName"
+msgstr "Plugin Ekspor Crossref XML"
+
+#, fuzzy
+msgid "plugins.importexport.crossref.description"
+msgstr "Mengekspor metadata monograf dan bab dalam format Crossref XML."
+
+#, fuzzy
+msgid "plugins.importexport.crossref.settings"
+msgstr "Pengaturan Crossref"
+
+#, fuzzy
+msgid "plugins.importexport.crossref.settings.depositorIntro"
+msgstr "Item berikut diperlukan agar penyetoran ke Crossref berhasil."
+
+#, fuzzy
+msgid "plugins.importexport.crossref.registrationIntro"
+msgstr "Jika Anda ingin memakai plugin ini untuk mendaftarkan DOI langsung ke Crossref, Anda memerlukan nama pengguna dan kata sandi. Tanpa itu pun Anda tetap bisa mengekspor berkas XML dan mengunggahnya ke Crossref."
+
+#, fuzzy
+msgid "plugins.importexport.crossref.settings.form.depositorName"
+msgstr "Nama penyetor"
+
+#, fuzzy
+msgid "plugins.importexport.crossref.settings.form.depositorName.description"
+msgstr "Nama organisasi yang mendaftarkan DOI."
+
+#, fuzzy
+msgid "plugins.importexport.crossref.settings.form.depositorEmail"
+msgstr "Surel penyetor"
+
+#, fuzzy
+msgid "plugins.importexport.crossref.settings.form.depositorEmail.description"
+msgstr "Alamat surel tempat Crossref mengirim konfirmasi setoran dan pemberitahuan galat."
+
+#, fuzzy
+msgid "plugins.importexport.crossref.settings.form.username"
+msgstr "Nama pengguna"
+
+#, fuzzy
+msgid "plugins.importexport.crossref.settings.form.username.description"
+msgstr "Nama pengguna (peran) Crossref Anda yang dipakai untuk menyetorkan DOI."
+
+#, fuzzy
+msgid "plugins.importexport.crossref.settings.form.testMode.description"
+msgstr "Gunakan lingkungan uji Crossref (sandbox), bukan sistem langsung, saat menyetorkan DOI. Ingat untuk mematikannya sebelum produksi."
+
+#, fuzzy
+msgid "plugins.importexport.crossref.error.publisherNotConfigured"
+msgstr "Penerbit belum dikonfigurasi. Anda harus memasukkan penerbit di <a href=\"{$contextSettingsUrl}\">pengaturan penerbit</a>."
+
+#, fuzzy
+msgid "plugins.importexport.crossref.register.error.mdsError"
+msgstr "Penyetoran tidak berhasil. Server Crossref mengembalikan galat. Silakan periksa status setoran."
+
+#, fuzzy
+msgid "plugins.importexport.crossref.register.success.warning"
+msgstr "Penyetoran berhasil, tetapi Crossref mengembalikan satu atau beberapa peringatan: {$param}"

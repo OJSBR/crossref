@@ -1,0 +1,85 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: OJSBR\n"
+"Language-Team: OJSBR\n"
+"Language: fa\n"
+
+
+#, fuzzy
+msgid "plugins.generic.crossref.displayName"
+msgstr "افزونهٔ مدیریت Crossref"
+
+#, fuzzy
+msgid "plugins.generic.crossref.description"
+msgstr "سپردن شناسه‌های DOI و فرادادهٔ کتاب‌ها و فصل‌ها به Crossref."
+
+#, fuzzy
+msgid "plugins.generic.crossref.registrationAgency.name"
+msgstr "Crossref"
+
+#, fuzzy
+msgid "plugins.generic.crossref.successMessage"
+msgstr "Crossref این ارسال را با شناسهٔ {$submissionId} پذیرفت. پردازش ممکن است چند دقیقه طول بکشد."
+
+#, fuzzy
+msgid "plugins.importexport.crossref.displayName"
+msgstr "افزونهٔ برون‌بری Crossref XML"
+
+#, fuzzy
+msgid "plugins.importexport.crossref.description"
+msgstr "برون‌بری فرادادهٔ کتاب‌ها و فصل‌ها در قالب Crossref XML."
+
+#, fuzzy
+msgid "plugins.importexport.crossref.settings"
+msgstr "تنظیمات Crossref"
+
+#, fuzzy
+msgid "plugins.importexport.crossref.settings.depositorIntro"
+msgstr "موارد زیر برای سپردن موفق به Crossref لازم است."
+
+#, fuzzy
+msgid "plugins.importexport.crossref.registrationIntro"
+msgstr "اگر می‌خواهید با این افزونه DOIها را مستقیماً در Crossref ثبت کنید، به نام کاربری و گذرواژه نیاز دارید. بدون آن‌ها هم می‌توانید فایل XML را برون‌بری و در Crossref بارگذاری کنید."
+
+#, fuzzy
+msgid "plugins.importexport.crossref.settings.form.depositorName"
+msgstr "نام سپارنده"
+
+#, fuzzy
+msgid "plugins.importexport.crossref.settings.form.depositorName.description"
+msgstr "نام سازمانی که DOIها را ثبت می‌کند."
+
+#, fuzzy
+msgid "plugins.importexport.crossref.settings.form.depositorEmail"
+msgstr "ایمیل سپارنده"
+
+#, fuzzy
+msgid "plugins.importexport.crossref.settings.form.depositorEmail.description"
+msgstr "نشانی ایمیلی که Crossref تأییدهای سپردن و اعلان‌های خطا را به آن می‌فرستد."
+
+#, fuzzy
+msgid "plugins.importexport.crossref.settings.form.username"
+msgstr "نام کاربری"
+
+#, fuzzy
+msgid "plugins.importexport.crossref.settings.form.username.description"
+msgstr "نام کاربری (نقش) Crossref شما که برای سپردن DOIها به کار می‌رود."
+
+#, fuzzy
+msgid "plugins.importexport.crossref.settings.form.testMode.description"
+msgstr "هنگام سپردن DOIها به‌جای سامانهٔ واقعی از محیط آزمایشی Crossref (sandbox) استفاده کنید. یادتان باشد پیش از بهره‌برداری آن را خاموش کنید."
+
+#, fuzzy
+msgid "plugins.importexport.crossref.error.publisherNotConfigured"
+msgstr "ناشر انتشارات پیکربندی نشده است. باید یک ناشر را در <a href=\"{$contextSettingsUrl}\">تنظیمات انتشارات</a> وارد کنید."
+
+#, fuzzy
+msgid "plugins.importexport.crossref.register.error.mdsError"
+msgstr "سپردن ناموفق بود. سرور Crossref خطا برگرداند. لطفاً وضعیت سپرده را بررسی کنید."
+
+#, fuzzy
+msgid "plugins.importexport.crossref.register.success.warning"
+msgstr "سپردن موفق بود، اما Crossref یک یا چند هشدار بازگرداند: {$param}"

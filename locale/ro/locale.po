@@ -1,0 +1,85 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: OJSBR\n"
+"Language-Team: OJSBR\n"
+"Language: ro\n"
+
+
+#, fuzzy
+msgid "plugins.generic.crossref.displayName"
+msgstr "Modul de gestionare Crossref"
+
+#, fuzzy
+msgid "plugins.generic.crossref.description"
+msgstr "Depune la Crossref DOI-urile și metadatele monografiilor și capitolelor."
+
+#, fuzzy
+msgid "plugins.generic.crossref.registrationAgency.name"
+msgstr "Crossref"
+
+#, fuzzy
+msgid "plugins.generic.crossref.successMessage"
+msgstr "Crossref a acceptat trimiterea cu identificatorul {$submissionId}. Procesarea poate dura câteva minute."
+
+#, fuzzy
+msgid "plugins.importexport.crossref.displayName"
+msgstr "Modul de export Crossref XML"
+
+#, fuzzy
+msgid "plugins.importexport.crossref.description"
+msgstr "Exportă metadatele monografiilor și capitolelor în format Crossref XML."
+
+#, fuzzy
+msgid "plugins.importexport.crossref.settings"
+msgstr "Setări Crossref"
+
+#, fuzzy
+msgid "plugins.importexport.crossref.settings.depositorIntro"
+msgstr "Următoarele elemente sunt necesare pentru o depunere reușită la Crossref."
+
+#, fuzzy
+msgid "plugins.importexport.crossref.registrationIntro"
+msgstr "Dacă doriți să folosiți acest modul pentru a înregistra DOI-uri direct la Crossref, aveți nevoie de un nume de utilizator și o parolă. Fără ele puteți totuși exporta fișierul XML și îl puteți încărca la Crossref."
+
+#, fuzzy
+msgid "plugins.importexport.crossref.settings.form.depositorName"
+msgstr "Numele depunătorului"
+
+#, fuzzy
+msgid "plugins.importexport.crossref.settings.form.depositorName.description"
+msgstr "Numele organizației care înregistrează DOI-urile."
+
+#, fuzzy
+msgid "plugins.importexport.crossref.settings.form.depositorEmail"
+msgstr "E-mailul depunătorului"
+
+#, fuzzy
+msgid "plugins.importexport.crossref.settings.form.depositorEmail.description"
+msgstr "Adresa de e-mail la care Crossref va trimite confirmările de depunere și notificările de eroare."
+
+#, fuzzy
+msgid "plugins.importexport.crossref.settings.form.username"
+msgstr "Nume de utilizator"
+
+#, fuzzy
+msgid "plugins.importexport.crossref.settings.form.username.description"
+msgstr "Numele dvs. de utilizator (rol) Crossref folosit pentru depunerea DOI-urilor."
+
+#, fuzzy
+msgid "plugins.importexport.crossref.settings.form.testMode.description"
+msgstr "Folosiți mediul de testare Crossref (sandbox) în loc de sistemul real la depunerea DOI-urilor. Nu uitați să îl dezactivați înainte de producție."
+
+#, fuzzy
+msgid "plugins.importexport.crossref.error.publisherNotConfigured"
+msgstr "Editorul nu este configurat. Trebuie să introduceți un editor în <a href=\"{$contextSettingsUrl}\">setările editurii</a>."
+
+#, fuzzy
+msgid "plugins.importexport.crossref.register.error.mdsError"
+msgstr "Depunerea nu a reușit. Serverul Crossref a returnat o eroare. Verificați starea depunerii."
+
+#, fuzzy
+msgid "plugins.importexport.crossref.register.success.warning"
+msgstr "Depunerea a reușit, dar Crossref a returnat una sau mai multe avertizări: {$param}"
