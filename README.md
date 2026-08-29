@@ -1,10 +1,10 @@
 # Crossref DOI plugin for OMP (OMP 3.4 branch)
 
 [![OMP](https://img.shields.io/badge/OMP-3.4-brightgreen)](https://pkp.sfu.ca/omp/)
-[![Version](https://img.shields.io/badge/version-1.0.0.2-blue)](version.xml)
+[![Version](https://img.shields.io/badge/version-1.0.0.3-blue)](version.xml)
 [![License](https://img.shields.io/badge/license-GPL--3.0-lightgrey)](LICENSE)
 
-**⬇️ Install package:** [OMP 3.5](https://github.com/OJSBR/crossref/releases/download/1.0.0.2-omp3.5/crossref-1.0.0.2-omp3.5.tar.gz) · [OMP 3.4](https://github.com/OJSBR/crossref/releases/download/1.0.0.2-omp3.4/crossref-1.0.0.2-omp3.4.tar.gz) — or browse all [Releases](../../releases).
+**⬇️ Install package:** [OMP 3.5](https://github.com/OJSBR/crossref/releases/download/1.0.0.3-omp3.5/crossref-1.0.0.3-omp3.5.tar.gz) · [OMP 3.4](https://github.com/OJSBR/crossref/releases/download/1.0.0.3-omp3.4/crossref-1.0.0.3-omp3.4.tar.gz) — or browse all [Releases](../../releases).
 
 > **This is the `stable-3_4_0` branch (OMP 3.4).** For OMP 3.5 use the
 > [`stable-3_5_0`](../../tree/stable-3_5_0) branch.
@@ -26,8 +26,8 @@ like in OJS.
 
 | OMP version | Branch | Plugin release |
 |-------------|--------|----------------|
-| OMP 3.5.x   | [`stable-3_5_0`](../../tree/stable-3_5_0) *(default)* | 1.0.0.2 |
-| OMP 3.4.x   | [`stable-3_4_0`](../../tree/stable-3_4_0) *(this branch)* | 1.0.0.2 |
+| OMP 3.5.x   | [`stable-3_5_0`](../../tree/stable-3_5_0) *(default)* | 1.0.0.3 |
+| OMP 3.4.x   | [`stable-3_4_0`](../../tree/stable-3_4_0) *(this branch)* | 1.0.0.3 |
 
 The DOI registration-agency framework (`IDoiRegistrationAgency`, `Repo::doi()`) is shared by
 pkp-lib and is present in OMP 3.4 and 3.5 with the same contract, so both branches share the
@@ -72,6 +72,13 @@ are shown per item.
 - ISBNs are taken from the monograph's publication formats (ONIX ISBN-13/ISBN-10); a
   `<noisbn reason="monograph"/>` is emitted when none are present.
 - Metadata is exported in the publication's own locale.
+- **ORCID iDs:** the Crossref schema only accepts `https://orcid.org/…`. An iD that does not
+  match it is left out of the deposit instead of failing the whole export. ORCID **Sandbox**
+  iDs (`https://sandbox.orcid.org/…`, stored when the ORCID integration runs against the
+  sandbox API) are rewritten to the production host while the plugin is in **test mode**, so
+  the Sandbox → OMP → Crossref workflow can be tested, and are dropped in production, so a
+  sandbox iD is never deposited against a live DOI. The `authenticated` attribute follows
+  whether the contributor's ORCID was actually verified.
 
 ## Changelog
 
@@ -133,6 +140,16 @@ integrando-se ao framework nativo (`IDoiRegistrationAgency`).
    usuário/senha do Crossref. Mantenha o **modo de teste** para validar em
    `test.crossref.org`; desative para produção em `doi.crossref.org`.
 3. Garanta um **Editor (Publisher)** em **Configurações → Editora**, exigido pelo Crossref.
+
+### Notas
+
+- **ORCID:** o schema do Crossref só aceita `https://orcid.org/…`. Um iD fora desse padrão é
+  omitido do depósito em vez de derrubar o export inteiro. iDs do **Sandbox** do ORCID
+  (`https://sandbox.orcid.org/…`, gravados quando a integração ORCID aponta para a API de
+  sandbox) são reescritos para o host de produção enquanto o plugin está em **modo de teste**,
+  para permitir testar o fluxo Sandbox → OMP → Crossref, e são omitidos em produção, para que
+  um iD de sandbox nunca seja depositado contra um DOI real. O atributo `authenticated`
+  acompanha se o ORCID do contribuidor foi de fato autenticado.
 
 ### Créditos e autoria
 
