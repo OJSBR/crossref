@@ -1,10 +1,10 @@
 # Crossref DOI plugin for OMP (OMP 3.4 branch)
 
 [![OMP](https://img.shields.io/badge/OMP-3.4-brightgreen)](https://pkp.sfu.ca/omp/)
-[![Version](https://img.shields.io/badge/version-1.0.0.3-blue)](version.xml)
+[![Version](https://img.shields.io/badge/version-1.0.0.4-blue)](version.xml)
 [![License](https://img.shields.io/badge/license-GPL--3.0-lightgrey)](LICENSE)
 
-**⬇️ Install package:** [OMP 3.5](https://github.com/OJSBR/crossref/releases/download/1.0.0.3-omp3.5/crossref-1.0.0.3-omp3.5.tar.gz) · [OMP 3.4](https://github.com/OJSBR/crossref/releases/download/1.0.0.3-omp3.4/crossref-1.0.0.3-omp3.4.tar.gz) — or browse all [Releases](../../releases).
+**⬇️ Install package:** [OMP 3.5](https://github.com/OJSBR/crossref/releases/download/1.0.0.5/crossref-1.0.0.5.tar.gz) · [OMP 3.4](https://github.com/OJSBR/crossref/releases/download/1.0.0.4-omp3.4/crossref-1.0.0.4-omp3.4.tar.gz) — or browse all [Releases](../../releases).
 
 > **This is the `stable-3_4_0` branch (OMP 3.4).** For OMP 3.5 use the
 > [`stable-3_5_0`](../../tree/stable-3_5_0) branch.
@@ -26,8 +26,8 @@ like in OJS.
 
 | OMP version | Branch | Plugin release |
 |-------------|--------|----------------|
-| OMP 3.5.x   | [`stable-3_5_0`](../../tree/stable-3_5_0) *(default)* | 1.0.0.3 |
-| OMP 3.4.x   | [`stable-3_4_0`](../../tree/stable-3_4_0) *(this branch)* | 1.0.0.3 |
+| OMP 3.5.x   | [`stable-3_5_0`](../../tree/stable-3_5_0) *(default)* | 1.0.0.5 |
+| OMP 3.4.x   | [`stable-3_4_0`](../../tree/stable-3_4_0) *(this branch)* | 1.0.0.4 |
 
 The DOI registration-agency framework (`IDoiRegistrationAgency`, `Repo::doi()`) is shared by
 pkp-lib and is present in OMP 3.4 and 3.5 with the same contract, so both branches share the
@@ -40,7 +40,10 @@ same implementation.
 
 ## What gets a DOI
 
-- **Monograph** (the publication) → Crossref `<book book_type="monograph">`
+- **Monograph** (the publication) → Crossref `<book book_type="monograph">`; for an
+  **edited volume** the book is deposited as `<book book_type="edited_book">` and only the
+  contributors flagged as *volume editor* are listed at book level, with
+  `contributor_role="editor"` (chapter authors stay in their chapters)
 - **Chapter** → Crossref `<content_item component_type="chapter">`
 
 ## Installation
@@ -81,6 +84,13 @@ are shown per item.
   whether the contributor's ORCID was actually verified.
 
 ## Changelog
+
+### 1.0.0.4 (2026-09-06) — OMP 3.4
+
+- **Fix (edited volumes):** the book was always typed `monograph` and `book_metadata` listed
+  every contributor of the publication (volume editors and all chapter authors) as
+  `contributor_role="author"`. Edited volumes are now deposited as `book_type="edited_book"`
+  with only the contributors flagged as volume editor at book level, as `editor`.
 
 ### 1.0.0.2 (2026-08-18) — OMP 3.4
 
@@ -127,7 +137,10 @@ integrando-se ao framework nativo (`IDoiRegistrationAgency`).
 
 ### O que recebe DOI
 
-- **Monografia** (a publicação) → `<book book_type="monograph">`
+- **Monografia** (a publicação) → `<book book_type="monograph">`; em **obra organizada**
+  (volume editado) o livro sai como `<book book_type="edited_book">` e só os contribuidores
+  marcados como *editor de volume* entram no nível do livro, com `contributor_role="editor"`
+  (os autores ficam nos seus capítulos)
 - **Capítulo** → `<content_item component_type="chapter">`
 
 ### Instalação e configuração
