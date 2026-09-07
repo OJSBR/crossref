@@ -150,8 +150,13 @@ class MonographCrossrefXmlFilter extends NativeExportFilter
         $publication = $submission->getCurrentPublication();
         $locale = $publication->getData('locale') ?: $context->getPrimaryLocale();
 
+        // Edited volumes (work_type = 1) are deposited as 'edited_book' with only the
+        // volume editors as book-level contributors (role 'editor'); chapter authors
+        // are listed in their own content_item nodes.
+        $isEditedVolume = (int) $submission->getData('workType') === Submission::WORK_TYPE_EDITED_VOLUME;
+
         $bookNode = $doc->createElementNS($namespace, 'book');
-        $bookNode->setAttribute('book_type', 'monograph');
+        $bookNode->setAttribute('book_type', $isEditedVolume ? 'edited_book' : 'monograph');
 
         $bookMetadataNode = $doc->createElementNS($namespace, 'book_metadata');
         $language = $this->_getShortLanguage($locale);
@@ -159,8 +164,23 @@ class MonographCrossrefXmlFilter extends NativeExportFilter
             $bookMetadataNode->setAttribute('language', $language);
         }
 
-        // 1. contributors (book authors)
-        $contributorsNode = $this->createContributorsNode($doc, $publication->getData('authors'), $locale);
+        // 1. contributors (book authors, or volume editors for an edited volume)
+        $bookAuthors = $publication->getData('authors');
+        $contributorRole = 'author';
+        if ($isEditedVolume) {
+            $volumeEditors = [];
+            foreach (is_iterable($bookAuthors) ? $bookAuthors : [] as $author) {
+                if ($author->getData('isVolumeEditor')) {
+                    $volumeEditors[] = $author;
+                }
+            }
+            // Fall back to the full list only when no volume editor was flagged.
+            if (!empty($volumeEditors)) {
+                $bookAuthors = $volumeEditors;
+                $contributorRole = 'editor';
+            }
+        }
+        $contributorsNode = $this->createContributorsNode($doc, $bookAuthors, $locale, $contributorRole);
         if ($contributorsNode) {
             $bookMetadataNode->appendChild($contributorsNode);
         }
@@ -296,10 +316,11 @@ class MonographCrossrefXmlFilter extends NativeExportFilter
      * @param \DOMDocument $doc
      * @param iterable $authors
      * @param string $locale Locale to read author names in
+     * @param string $role Crossref contributor_role (author, editor, ...)
      *
      * @return \DOMElement|null
      */
-    public function createContributorsNode($doc, $authors, $locale)
+    public function createContributorsNode($doc, $authors, $locale, $role = 'author')
     {
         $deployment = $this->getDeployment();
         $namespace = $deployment->getNamespace();
@@ -331,7 +352,7 @@ class MonographCrossrefXmlFilter extends NativeExportFilter
 
             $personNameNode = $doc->createElementNS($namespace, 'person_name');
             $personNameNode->setAttribute('sequence', $isFirst ? 'first' : 'additional');
-            $personNameNode->setAttribute('contributor_role', 'author');
+            $personNameNode->setAttribute('contributor_role', $role);
             if (!empty($givenName)) {
                 $personNameNode->appendChild($doc->createElementNS($namespace, 'given_name', htmlspecialchars(substr($givenName, 0, 60), ENT_COMPAT, 'UTF-8')));
             }
