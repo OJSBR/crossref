@@ -4,7 +4,7 @@
 [![Version](https://img.shields.io/badge/version-1.0.0.6-blue)](version.xml)
 [![License](https://img.shields.io/badge/license-GPL--3.0-lightgrey)](LICENSE)
 
-**⬇️ Install package:** [OMP 3.5](https://github.com/OJSBR/crossref/releases/download/1.0.0.6/crossref-1.0.0.6.tar.gz) · [OMP 3.4](https://github.com/OJSBR/crossref/releases/download/1.0.0.4-omp3.4/crossref-1.0.0.4-omp3.4.tar.gz) — or browse all [Releases](../../releases).
+**⬇️ Install package:** [OMP 3.5](https://github.com/OJSBR/crossref/releases/download/1.0.0.6/crossref-1.0.0.6.tar.gz) · [OMP 3.4](https://github.com/OJSBR/crossref/releases/download/1.0.0.6-omp3.4/crossref-1.0.0.6-omp3.4.tar.gz) — or browse all [Releases](../../releases).
 
 Registers monograph and chapter DOIs with [Crossref](https://www.crossref.org/) and exports
 the corresponding Crossref *book deposit* XML (schema 5.3.1).
@@ -31,12 +31,12 @@ like in OJS.
 | OMP version | Branch | Plugin release |
 |-------------|--------|----------------|
 | OMP 3.5.x   | [`stable-3_5_0`](../../tree/stable-3_5_0) *(default)* | 1.0.0.6 |
-| OMP 3.4.x   | [`stable-3_4_0`](../../tree/stable-3_4_0) | 1.0.0.4-omp3.4 |
+| OMP 3.4.x   | [`stable-3_4_0`](../../tree/stable-3_4_0) | 1.0.0.6-omp3.4 |
 
-Tested on OMP 3.5.0.5. The DOI registration-agency framework is shared by pkp-lib and has
+Tested on OMP 3.5.0.5 and 3.4.0.10. The DOI registration-agency framework is shared by pkp-lib and has
 the same contract in OMP 3.4 and 3.5, so both branches share the same implementation.
 
-> **Upgrade from 1.0.0.5.** A contributor name made only of blanks in the deposit locale produced
+> **Upgrade from 1.0.0.5 (1.0.0.4 on OMP 3.4).** A contributor name made only of blanks in the deposit locale produced
 > an empty `<surname>` and Crossref refused the whole deposit; long names could be cut in the
 > middle of a character; every batch `timestamp` ended in `000`, so two deposits of the same DOI
 > within a second carried the same record version; and five labels and messages borrowed from
@@ -108,10 +108,13 @@ are shown per item.
   lib/pkp/lib/vendor/bin/phpunit --configuration lib/pkp/tests/phpunit.xml --no-coverage "$PWD/plugins/generic/crossref/tests"
   ```
 
-- Verified on OMP 3.5.0.5: the XML of three published books with 4 and 5 chapters (DOIs set in
+- **Cypress** (`cypress/tests/functional/CrossrefSettings.cy.js`): Crossref offered as the DOI
+  registration agency, with its fields and no untranslated text; nothing is saved. It fails with
+  the 1.0.0.5 translations. Parameters: `contextPath`, `adminUser`, `adminPassword`.
+- Verified on OMP 3.5.0.5 and 3.4.0.10: the XML of published books with chapters (DOIs set in
   memory, nothing deposited) validates against the Crossref schema, also as an edited volume
   (`edited_book` with the volume editor at book level) and with a surname made of a blank, which
-  failed validation before 1.0.0.6. The settings form shows no untranslated label.
+  failed validation before 1.0.0.6.
 
 ## Credits & authorship
 
@@ -151,7 +154,7 @@ lacuna, integrando-se ao framework nativo (`IDoiRegistrationAgency`).
 > DOI do OMP e mantido pela [OJSBR](https://ojsbr.com). Veja a seção
 > [Créditos e autoria](#créditos-e-autoria) abaixo.
 
-> **Atualização a partir da 1.0.0.5.** Nome de contribuidor feito só de espaços no idioma do
+> **Atualização a partir da 1.0.0.5 (1.0.0.4 no OMP 3.4).** Nome de contribuidor feito só de espaços no idioma do
 > depósito gerava `<surname>` vazio e o Crossref recusava o depósito inteiro; nomes longos podiam
 > ser cortados no meio de um caractere; o `timestamp` do lote sempre terminava em `000`, e dois
 > depósitos do mesmo DOI no mesmo segundo levavam a mesma versão; e cinco textos emprestados do
@@ -163,7 +166,7 @@ lacuna, integrando-se ao framework nativo (`IDoiRegistrationAgency`).
 | Versão do OMP | Branch | Release do plugin |
 |---------------|--------|-------------------|
 | OMP 3.5.x     | [`stable-3_5_0`](../../tree/stable-3_5_0) *(padrão)* | 1.0.0.6 |
-| OMP 3.4.x     | [`stable-3_4_0`](../../tree/stable-3_4_0) | 1.0.0.4-omp3.4 |
+| OMP 3.4.x     | [`stable-3_4_0`](../../tree/stable-3_4_0) | 1.0.0.6-omp3.4 |
 
 ### O que recebe DOI
 
@@ -204,8 +207,9 @@ contra o PKP instalado, nó de contribuidores (nomes em branco, idioma de recuo,
 em produção e em teste), páginas do capítulo, `timestamp` do lote e as 38 traduções. Verificado no
 OMP 3.5.0.5: o XML de três livros publicados com 4 e 5 capítulos (DOIs só em memória, nada
 depositado) valida contra o schema do Crossref, também como obra organizada e com sobrenome feito
-de um espaço, que reprovava antes da 1.0.0.6. O formulário de configurações não mostra texto sem
-tradução.
+de um espaço, que reprovava antes da 1.0.0.6. Spec Cypress em `cypress/tests/functional/`: Crossref
+oferecido como agência de registro de DOI, com os campos e nenhum texto sem tradução (nada é salvo);
+reprova com as traduções da 1.0.0.5. Tudo verificado também no OMP 3.4.0.10.
 
 ### Créditos e autoria
 
