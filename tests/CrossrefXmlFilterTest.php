@@ -17,9 +17,12 @@ use APP\facades\Repo;
 use APP\plugins\generic\crossref\CrossrefExportDeployment;
 use APP\plugins\generic\crossref\filter\MonographCrossrefXmlFilter;
 use DOMDocument;
+use PHPUnit\Framework\Attributes\CoversClass;
 use PKP\filter\FilterGroup;
+use PKP\tests\PKPTestCase;
 
-class CrossrefXmlFilterTest extends TestCase
+#[CoversClass(MonographCrossrefXmlFilter::class)]
+class CrossrefXmlFilterTest extends PKPTestCase
 {
     private function filter(bool $testMode = false): MonographCrossrefXmlFilter
     {

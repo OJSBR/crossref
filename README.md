@@ -1,10 +1,10 @@
 # Crossref DOI plugin for OMP (Open Monograph Press)
 
 [![OMP](https://img.shields.io/badge/OMP-3.5-brightgreen)](https://pkp.sfu.ca/omp/)
-[![Version](https://img.shields.io/badge/version-1.0.0.6-blue)](version.xml)
+[![Version](https://img.shields.io/badge/version-1.0.0.7-blue)](version.xml)
 [![License](https://img.shields.io/badge/license-GPL--3.0-lightgrey)](LICENSE)
 
-**⬇️ Install package:** [OMP 3.5](https://github.com/OJSBR/crossref/releases/download/1.0.0.6/crossref-1.0.0.6.tar.gz) · [OMP 3.4](https://github.com/OJSBR/crossref/releases/download/1.0.0.6-omp3.4/crossref-1.0.0.6-omp3.4.tar.gz) — or browse all [Releases](../../releases).
+**⬇️ Install package:** [OMP 3.5](https://github.com/OJSBR/crossref/releases/download/1.0.0.7/crossref-1.0.0.7.tar.gz) · [OMP 3.4](https://github.com/OJSBR/crossref/releases/download/1.0.0.7-omp3.4/crossref-1.0.0.7-omp3.4.tar.gz) — or browse all [Releases](../../releases).
 
 Registers monograph and chapter DOIs with [Crossref](https://www.crossref.org/) and exports
 the corresponding Crossref *book deposit* XML (schema 5.3.1).
@@ -30,8 +30,8 @@ like in OJS.
 
 | OMP version | Branch | Plugin release |
 |-------------|--------|----------------|
-| OMP 3.5.x   | [`stable-3_5_0`](../../tree/stable-3_5_0) *(default)* | 1.0.0.6 |
-| OMP 3.4.x   | [`stable-3_4_0`](../../tree/stable-3_4_0) | 1.0.0.6-omp3.4 |
+| OMP 3.5.x   | [`stable-3_5_0`](../../tree/stable-3_5_0) *(default)* | 1.0.0.7 |
+| OMP 3.4.x   | [`stable-3_4_0`](../../tree/stable-3_4_0) | 1.0.0.7-omp3.4 |
 
 Tested on OMP 3.5.0.5 and 3.4.0.10. The DOI registration-agency framework is shared by pkp-lib and has
 the same contract in OMP 3.4 and 3.5, so both branches share the same implementation.
@@ -98,23 +98,25 @@ are shown per item.
 
 ## Tests
 
-- **PHP suite** (`tests/`, 20 tests): the plugin classes against the installed PKP, the
-  contributors node (blank names, fallback locale, UTF-8 cut, ORCID in production and test
-  mode), chapter pages, the batch timestamp and the 38 translations. Run either way from the OMP
-  root:
+- **PHPUnit** (`tests/*Test.php`, on `PKP\tests\PKPTestCase`): the plugin classes against the
+  installed PKP, the plugin found by PKP's plugin registry, the contributors node (blank names,
+  fallback locale, UTF-8 cut, ORCID in production and test mode), chapter pages, the batch
+  timestamp and the 38 translations. From the OMP root:
 
   ```bash
-  php plugins/generic/crossref/tests/run.php
   lib/pkp/lib/vendor/bin/phpunit --configuration lib/pkp/tests/phpunit.xml --no-coverage "$PWD/plugins/generic/crossref/tests"
   ```
 
-- **Cypress** (`cypress/tests/functional/CrossrefSettings.cy.js`): Crossref offered as the DOI
-  registration agency, with its fields and no untranslated text; nothing is saved. It fails with
-  the 1.0.0.5 translations. Parameters: `contextPath`, `adminUser`, `adminPassword`.
+- **Cypress** (`cypress/tests/functional/CrossrefSettings.cy.js`, run by
+  [pkp-github-actions](https://github.com/pkp/pkp-github-actions) on OMP on every push): enables
+  the plugin and checks Crossref offered as the DOI registration agency, with its fields and no
+  untranslated text; nothing else is saved.
 - Verified on OMP 3.5.0.5 and 3.4.0.10: the XML of published books with chapters (DOIs set in
   memory, nothing deposited) validates against the Crossref schema, also as an edited volume
   (`edited_book` with the volume editor at book level) and with a surname made of a blank, which
   failed validation before 1.0.0.6.
+
+Tests are kept in the repository and are not part of the release package.
 
 ## Credits & authorship
 
@@ -124,6 +126,12 @@ are shown per item.
   [`docs/LICENSE-PKP-MIT`](docs/LICENSE-PKP-MIT).
 - **Adaptation to the OMP DOI framework:** maintained by [OJSBR](https://ojsbr.com) and
   distributed under the **GNU GPL v3**.
+
+## AI use
+
+Generative AI (Claude, by Anthropic) was used to write and run tests, improve the code and bring
+it in line with PKP standards. Every change is reviewed and tested by OJSBR, which is responsible
+for the published releases.
 
 ## Contributing
 
@@ -165,8 +173,8 @@ lacuna, integrando-se ao framework nativo (`IDoiRegistrationAgency`).
 
 | Versão do OMP | Branch | Release do plugin |
 |---------------|--------|-------------------|
-| OMP 3.5.x     | [`stable-3_5_0`](../../tree/stable-3_5_0) *(padrão)* | 1.0.0.6 |
-| OMP 3.4.x     | [`stable-3_4_0`](../../tree/stable-3_4_0) | 1.0.0.6-omp3.4 |
+| OMP 3.5.x     | [`stable-3_5_0`](../../tree/stable-3_5_0) *(padrão)* | 1.0.0.7 |
+| OMP 3.4.x     | [`stable-3_4_0`](../../tree/stable-3_4_0) | 1.0.0.7-omp3.4 |
 
 ### O que recebe DOI
 
@@ -202,7 +210,7 @@ lacuna, integrando-se ao framework nativo (`IDoiRegistrationAgency`).
 
 ### Testes
 
-Suíte PHP em `tests/` (20 testes, pelo `tests/run.php` ou pelo PHPUnit do PKP): classes do plugin
+PHPUnit em `tests/`: classes do plugin
 contra o PKP instalado, nó de contribuidores (nomes em branco, idioma de recuo, corte UTF-8, ORCID
 em produção e em teste), páginas do capítulo, `timestamp` do lote e as 38 traduções. Verificado no
 OMP 3.5.0.5: o XML de três livros publicados com 4 e 5 capítulos (DOIs só em memória, nada
@@ -211,6 +219,8 @@ de um espaço, que reprovava antes da 1.0.0.6. Spec Cypress em `cypress/tests/fu
 oferecido como agência de registro de DOI, com os campos e nenhum texto sem tradução (nada é salvo);
 reprova com as traduções da 1.0.0.5. Tudo verificado também no OMP 3.4.0.10.
 
+A suíte roda sobre `PKP\tests\PKPTestCase`, também confere que o registro de plugins encontra o plugin, e o Cypress roda no [pkp-github-actions](https://github.com/pkp/pkp-github-actions) no OMP a cada push. Os testes ficam no repositório e não fazem parte do pacote da release.
+
 ### Créditos e autoria
 
 - **Trabalho original:** plugin **Crossref do OJS** (PKP) de Bozana Bokan, Juan Pablo Alperin e
@@ -218,6 +228,12 @@ reprova com as traduções da 1.0.0.5. Tudo verificado também no OMP 3.4.0.10.
   distribuído sob a licença MIT, cujo aviso está em [`docs/LICENSE-PKP-MIT`](docs/LICENSE-PKP-MIT).
 - **Adaptação ao framework de DOI do OMP:** mantida pela [OJSBR](https://ojsbr.com) e distribuída
   sob a **GNU GPL v3**.
+
+### Uso de IA
+
+Foi usada IA generativa (Claude, da Anthropic) para escrever e rodar testes, melhorar o código e
+alinhá-lo aos padrões da PKP. Toda mudança é revisada e testada pela OJSBR, que responde pelas
+releases publicadas.
 
 ### Licença
 

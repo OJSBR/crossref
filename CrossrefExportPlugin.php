@@ -178,6 +178,8 @@ class CrossrefExportPlugin extends ImportExportPlugin
 
     /**
      * Exports and deposits the XML for the given monographs, one request per object.
+     *
+     * @param null|mixed $noValidation
      */
     public function exportAndDeposit($context, $objects, $filter, string &$responseMessage, $noValidation = null): bool
     {
@@ -245,6 +247,8 @@ class CrossrefExportPlugin extends ImportExportPlugin
      * @param string $filename Export XML filename
      *
      * @throws GuzzleException
+     *
+     * @hook crossrefexportplugin::deposited [[$this, $response->getBody(), $objects]]
      */
     public function depositXML($objects, $context, $filename)
     {
