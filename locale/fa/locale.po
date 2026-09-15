@@ -83,3 +83,27 @@ msgstr "سپردن ناموفق بود. سرور Crossref خطا برگردان�
 #, fuzzy
 msgid "plugins.importexport.crossref.register.success.warning"
 msgstr "سپردن موفق بود، اما Crossref یک یا چند هشدار بازگرداند: {$param}"
+
+#, fuzzy
+msgid "plugins.importexport.common.missingRequirements"
+msgstr "پیشنیازهای افزونه رعایت نشده است"
+
+#, fuzzy
+msgid "plugins.importexport.common.register.error.mdsError"
+msgstr "ثبت‌نام موفق نبود، سرور ثبت نام DOI خطای زیر را برگرداند: '{$param}'"
+
+#, fuzzy
+msgid "plugins.importexport.common.register.success"
+msgstr "ثبت‌نام با موفقیت انجام شد!"
+
+#, fuzzy
+msgid "plugins.importexport.common.settings.form.password"
+msgstr "رمز عبور"
+
+#, fuzzy
+msgid "plugins.importexport.common.settings.form.password.description"
+msgstr "توجه داشته باشید که رمز به صورت متن خام (رمزگذاری نشده) ذخیره می شود."
+
+#, fuzzy
+msgid "plugins.importexport.common.settings.form.testMode.label"
+msgstr "آزمایش"

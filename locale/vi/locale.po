@@ -83,3 +83,27 @@ msgstr "Việc nộp không thành công. Máy chủ Crossref trả về lỗi. 
 #, fuzzy
 msgid "plugins.importexport.crossref.register.success.warning"
 msgstr "Việc nộp đã thành công, nhưng Crossref trả về một hoặc nhiều cảnh báo: {$param}"
+
+#, fuzzy
+msgid "plugins.importexport.common.missingRequirements"
+msgstr "Yêu cầu plugin không được đáp ứng"
+
+#, fuzzy
+msgid "plugins.importexport.common.register.error.mdsError"
+msgstr "Đăng ký không thành công! Máy chủ đăng ký DOI đã trả về lỗi: '{$param}'."
+
+#, fuzzy
+msgid "plugins.importexport.common.register.success"
+msgstr "Đăng ký thành công!"
+
+#, fuzzy
+msgid "plugins.importexport.common.settings.form.password"
+msgstr "Mật khẩu"
+
+#, fuzzy
+msgid "plugins.importexport.common.settings.form.password.description"
+msgstr "Xin lưu ý rằng mật khẩu sẽ được lưu dưới dạng văn bản thuần túy, tức là không được mã hóa."
+
+#, fuzzy
+msgid "plugins.importexport.common.settings.form.testMode.label"
+msgstr "Thử nghiệm"

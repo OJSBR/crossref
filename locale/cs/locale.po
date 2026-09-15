@@ -83,3 +83,27 @@ msgstr "Vklad se nezdařil. Server Crossref vrátil chybu. Zkontrolujte prosím 
 #, fuzzy
 msgid "plugins.importexport.crossref.register.success.warning"
 msgstr "Vklad proběhl úspěšně, ale Crossref vrátil jedno či více varování: {$param}"
+
+#, fuzzy
+msgid "plugins.importexport.common.missingRequirements"
+msgstr "Nevyhovuje požadavkům pluginu"
+
+#, fuzzy
+msgid "plugins.importexport.common.register.error.mdsError"
+msgstr "Registrace nebyla úspěšná! Registrační server DOI vrátil následující chybu: '{$param}'."
+
+#, fuzzy
+msgid "plugins.importexport.common.register.success"
+msgstr "Registrace byla úspěšná!"
+
+#, fuzzy
+msgid "plugins.importexport.common.settings.form.password"
+msgstr "Heslo"
+
+#, fuzzy
+msgid "plugins.importexport.common.settings.form.password.description"
+msgstr "Upozornění: heslo bude uloženo jako prostý text, nebude tedy zašifrováno."
+
+#, fuzzy
+msgid "plugins.importexport.common.settings.form.testMode.label"
+msgstr "Testování"

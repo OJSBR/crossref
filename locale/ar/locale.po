@@ -83,3 +83,27 @@ msgstr "لم ينجح الإيداع. أعاد خادم Crossref خطأً. ير�
 #, fuzzy
 msgid "plugins.importexport.crossref.register.success.warning"
 msgstr "نجح الإيداع، لكن Crossref أعاد تحذيراً أو أكثر: {$param}"
+
+#, fuzzy
+msgid "plugins.importexport.common.missingRequirements"
+msgstr "متطلبات الإضافة غير ملباة"
+
+#, fuzzy
+msgid "plugins.importexport.common.register.error.mdsError"
+msgstr "التسجيل لم ينجح! أبلغ ملقم تسجيل DOI عن خطأ: '{$param}'."
+
+#, fuzzy
+msgid "plugins.importexport.common.register.success"
+msgstr "نجحت عملية التسجيل!"
+
+#, fuzzy
+msgid "plugins.importexport.common.settings.form.password"
+msgstr "كلمة المرور"
+
+#, fuzzy
+msgid "plugins.importexport.common.settings.form.password.description"
+msgstr "لطفاً، لاحظ أن كلمة المرور سيتم حفظها بشكل نص صريح غير مشفر."
+
+#, fuzzy
+msgid "plugins.importexport.common.settings.form.testMode.label"
+msgstr "قيد الاختبار"

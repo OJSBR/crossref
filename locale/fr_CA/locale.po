@@ -64,3 +64,21 @@ msgstr "Le dépôt a échoué. Le serveur Crossref a renvoyé une erreur. Veuill
 
 msgid "plugins.importexport.crossref.register.success.warning"
 msgstr "Le dépôt a réussi, mais Crossref a renvoyé un ou plusieurs avertissements : {$param}"
+
+msgid "plugins.importexport.common.missingRequirements"
+msgstr "Exigences non satisfaites pour l'utilisation du plugiciel"
+
+msgid "plugins.importexport.common.register.error.mdsError"
+msgstr "L'enregistrement a échoué ! Le serveur d'enregistrement DOI a retourné une erreur : « {$param} »."
+
+msgid "plugins.importexport.common.register.success"
+msgstr "Enregistrement réussi !"
+
+msgid "plugins.importexport.common.settings.form.password"
+msgstr "Mot de passe"
+
+msgid "plugins.importexport.common.settings.form.password.description"
+msgstr "Veuillez noter que le mot de passe sera enregistré en plein texte et ne sera donc pas encrypté."
+
+msgid "plugins.importexport.common.settings.form.testMode.label"
+msgstr "Test"

@@ -83,3 +83,27 @@ msgstr "დეპოზიტი ვერ შესრულდა. Crossref-�
 #, fuzzy
 msgid "plugins.importexport.crossref.register.success.warning"
 msgstr "დეპოზიტი წარმატებული იყო, მაგრამ Crossref-მა დააბრუნა ერთი ან რამდენიმე გაფრთხილება: {$param}"
+
+#, fuzzy
+msgid "plugins.importexport.common.missingRequirements"
+msgstr "პლაგინის მოთხოვნები არ დაკმაყოფილდა"
+
+#, fuzzy
+msgid "plugins.importexport.common.register.error.mdsError"
+msgstr "რეგისტრაცია წარმატებით ვერ განხორციელდა! DOI რეგისტრაციის სერვერმა დააბრუნა შეცდომა: '{$param}'."
+
+#, fuzzy
+msgid "plugins.importexport.common.register.success"
+msgstr "წარმატებული რეგისტრაცია!"
+
+#, fuzzy
+msgid "plugins.importexport.common.settings.form.password"
+msgstr "პაროლი"
+
+#, fuzzy
+msgid "plugins.importexport.common.settings.form.password.description"
+msgstr "გთხოვთ გაითვალისწინოთ, რომ პაროლი შეინახება როგორც მარტივი ტექსტი, ანუ არ არის დაშიფრული."
+
+#, fuzzy
+msgid "plugins.importexport.common.settings.form.testMode.label"
+msgstr "ტესტირება"

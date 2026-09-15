@@ -1,14 +1,10 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: \n"
-"Report-Msgid-Bugs-To: \n"
-"Last-Translator: OJSBR <eder@sotto.com.br>\n"
-"Language-Team: OJSBR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-07-16T00:00:00+00:00\n"
-"PO-Revision-Date: 2026-07-16T00:00:00+00:00\n"
+"Last-Translator: OJSBR\n"
+"Language-Team: OJSBR\n"
 "Language: it\n"
 
 
@@ -68,3 +64,21 @@ msgstr "Il deposito non è andato a buon fine. Il server di Crossref ha restitui
 
 msgid "plugins.importexport.crossref.register.success.warning"
 msgstr "Il deposito è andato a buon fine, ma Crossref ha restituito uno o più avvisi: {$param}"
+
+msgid "plugins.importexport.common.missingRequirements"
+msgstr "Configurazione incompleta"
+
+msgid "plugins.importexport.common.register.error.mdsError"
+msgstr "Errore nella registrazione! Il server di registrazione ha restituito un errore: '{$param}'."
+
+msgid "plugins.importexport.common.register.success"
+msgstr "Registrazione conclusa con successo!"
+
+msgid "plugins.importexport.common.settings.form.password"
+msgstr "Password"
+
+msgid "plugins.importexport.common.settings.form.password.description"
+msgstr "La password verrà salvata come testo, non crittografata."
+
+msgid "plugins.importexport.common.settings.form.testMode.label"
+msgstr "Test"

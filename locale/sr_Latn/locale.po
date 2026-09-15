@@ -83,3 +83,27 @@ msgstr "Depozit nije uspeo. Crossref server je vratio grešku. Proverite status 
 #, fuzzy
 msgid "plugins.importexport.crossref.register.success.warning"
 msgstr "Depozit je uspeo, ali je Crossref vratio jedno ili više upozorenja: {$param}"
+
+#, fuzzy
+msgid "plugins.importexport.common.missingRequirements"
+msgstr "Zahtevi dodatka nisu ispunjeni"
+
+#, fuzzy
+msgid "plugins.importexport.common.register.error.mdsError"
+msgstr "Registracija nije bila uspešna! DOI registracioni server je vratio grešku: '{$param}'."
+
+#, fuzzy
+msgid "plugins.importexport.common.register.success"
+msgstr "Uspešna registracija!"
+
+#, fuzzy
+msgid "plugins.importexport.common.settings.form.password"
+msgstr "Lozinka"
+
+#, fuzzy
+msgid "plugins.importexport.common.settings.form.password.description"
+msgstr "Obratite pažnju da će lozinka biti sačuvana kao običan tekst tj. neće biti dodatno šifrovana."
+
+#, fuzzy
+msgid "plugins.importexport.common.settings.form.testMode.label"
+msgstr "Testiranje"

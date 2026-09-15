@@ -64,3 +64,21 @@ msgstr "O depósito non se completou. O servidor de Crossref devolveu un erro. C
 
 msgid "plugins.importexport.crossref.register.success.warning"
 msgstr "O depósito realizouse correctamente, pero Crossref devolveu un ou máis avisos: {$param}"
+
+msgid "plugins.importexport.common.missingRequirements"
+msgstr "Non se cumpren os requisitos do complemento"
+
+msgid "plugins.importexport.common.register.error.mdsError"
+msgstr "O rexistro non foi correcto. O servidor de rexistro do DOI devolveu un erro: '{$param}'."
+
+msgid "plugins.importexport.common.register.success"
+msgstr "Rexistro realizado correctamente!"
+
+msgid "plugins.importexport.common.settings.form.password"
+msgstr "Contrasinal"
+
+msgid "plugins.importexport.common.settings.form.password.description"
+msgstr "Ten en conta que o contrasinal gardarase como texto plano, é dicir, non cifrado."
+
+msgid "plugins.importexport.common.settings.form.testMode.label"
+msgstr "Probas"

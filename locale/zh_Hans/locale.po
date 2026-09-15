@@ -83,3 +83,27 @@ msgstr "提交未成功。Crossref 服务器返回了错误。请检查提交状
 #, fuzzy
 msgid "plugins.importexport.crossref.register.success.warning"
 msgstr "提交成功，但 Crossref 返回了一个或多个警告：{$param}"
+
+#, fuzzy
+msgid "plugins.importexport.common.missingRequirements"
+msgstr "不符合插件要求"
+
+#, fuzzy
+msgid "plugins.importexport.common.register.error.mdsError"
+msgstr "注册失败！DOI注册服务器返回一个错误：'{$param}'。"
+
+#, fuzzy
+msgid "plugins.importexport.common.register.success"
+msgstr "注册成功！"
+
+#, fuzzy
+msgid "plugins.importexport.common.settings.form.password"
+msgstr "密码"
+
+#, fuzzy
+msgid "plugins.importexport.common.settings.form.password.description"
+msgstr "请注意密码已纯文本的形式保存，如：不加密。"
+
+#, fuzzy
+msgid "plugins.importexport.common.settings.form.testMode.label"
+msgstr "测试"

@@ -83,3 +83,27 @@ msgstr "Talletus ei onnistunut. Crossref-palvelin palautti virheen. Tarkista tal
 #, fuzzy
 msgid "plugins.importexport.crossref.register.success.warning"
 msgstr "Talletus onnistui, mutta Crossref palautti yhden tai useamman varoituksen: {$param}"
+
+#, fuzzy
+msgid "plugins.importexport.common.missingRequirements"
+msgstr "Lisäosan vaatimukset eivät täyty"
+
+#, fuzzy
+msgid "plugins.importexport.common.register.error.mdsError"
+msgstr "Rekisteröinti ei onnistunut! DOI:n rekisteröintipalvelin tuotti virheen: ‘{$param}’."
+
+#, fuzzy
+msgid "plugins.importexport.common.register.success"
+msgstr "Rekisteröinti onnistui!"
+
+#, fuzzy
+msgid "plugins.importexport.common.settings.form.password"
+msgstr "Salasana"
+
+#, fuzzy
+msgid "plugins.importexport.common.settings.form.password.description"
+msgstr "Huomaathan, että salasana tallennetaan pelkkänä tekstinä, eli ei salatussa muodossa."
+
+#, fuzzy
+msgid "plugins.importexport.common.settings.form.testMode.label"
+msgstr "Testaus"

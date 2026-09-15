@@ -1,15 +1,11 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: \n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-01T00:00:00+00:00\n"
-"PO-Revision-Date: 2026-07-01T00:00:00+00:00\n"
-"Last-Translator: \n"
-"Language-Team: \n"
-"Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: OJSBR\n"
+"Language-Team: OJSBR\n"
+"Language: pt_BR\n"
 
 
 msgid "plugins.generic.crossref.displayName"
@@ -68,3 +64,21 @@ msgstr "O depósito não foi bem-sucedido. O servidor da Crossref retornou um er
 
 msgid "plugins.importexport.crossref.register.success.warning"
 msgstr "O depósito foi bem-sucedido, mas a Crossref retornou um ou mais avisos: {$param}"
+
+msgid "plugins.importexport.common.missingRequirements"
+msgstr "Requisitos do plugin não foram atendidos"
+
+msgid "plugins.importexport.common.register.error.mdsError"
+msgstr "O registro não foi bem sucedido! O servidor de registro DOI retornou um erro: '{$param}'."
+
+msgid "plugins.importexport.common.register.success"
+msgstr "Registrado com sucesso!"
+
+msgid "plugins.importexport.common.settings.form.password"
+msgstr "Senha"
+
+msgid "plugins.importexport.common.settings.form.password.description"
+msgstr "Por favor, note que a senha será guardada como texto simples, isto é, não criptografado."
+
+msgid "plugins.importexport.common.settings.form.testMode.label"
+msgstr "Testando"

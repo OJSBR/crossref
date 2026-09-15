@@ -64,3 +64,21 @@ msgstr "El dipòsit no s'ha completat. El servidor de Crossref ha retornat un er
 
 msgid "plugins.importexport.crossref.register.success.warning"
 msgstr "El dipòsit s'ha fet correctament, però Crossref ha retornat un o més avisos: {$param}"
+
+msgid "plugins.importexport.common.missingRequirements"
+msgstr "No es compleixen els requisits del mòdul"
+
+msgid "plugins.importexport.common.register.error.mdsError"
+msgstr "El registre no es correcte! El servidor de registre del DOI ha retornat un error: '{$param}'."
+
+msgid "plugins.importexport.common.register.success"
+msgstr "Registre correcte!"
+
+msgid "plugins.importexport.common.settings.form.password"
+msgstr "Contrasenya"
+
+msgid "plugins.importexport.common.settings.form.password.description"
+msgstr "Heu de tenir en compte que la contrasenya serà guardada en text sense format, p. ex. no encriptada."
+
+msgid "plugins.importexport.common.settings.form.testMode.label"
+msgstr "Proves"

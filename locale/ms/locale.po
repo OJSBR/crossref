@@ -83,3 +83,27 @@ msgstr "Deposit tidak berjaya. Pelayan Crossref memulangkan ralat. Sila semak st
 #, fuzzy
 msgid "plugins.importexport.crossref.register.success.warning"
 msgstr "Deposit berjaya, tetapi Crossref memulangkan satu atau lebih amaran: {$param}"
+
+#, fuzzy
+msgid "plugins.importexport.common.missingRequirements"
+msgstr "Keperluan plugin tidak dipenuhi"
+
+#, fuzzy
+msgid "plugins.importexport.common.register.error.mdsError"
+msgstr "Pendaftaran tidak berjaya! Pelayan pendaftaran DOI mengembalikan ralat: '{$param}'."
+
+#, fuzzy
+msgid "plugins.importexport.common.register.success"
+msgstr "Pendaftaran berjaya!"
+
+#, fuzzy
+msgid "plugins.importexport.common.settings.form.password"
+msgstr "Kata Laluan"
+
+#, fuzzy
+msgid "plugins.importexport.common.settings.form.password.description"
+msgstr "Harap perhatikan bahawa kata laluan akan disimpan sebagai teks biasa, iaitu tidak disulitkan."
+
+#, fuzzy
+msgid "plugins.importexport.common.settings.form.testMode.label"
+msgstr "Pengujian"

@@ -83,3 +83,27 @@ msgstr "Indsendelsen lykkedes ikke. Crossref-serveren returnerede en fejl. Tjek 
 #, fuzzy
 msgid "plugins.importexport.crossref.register.success.warning"
 msgstr "Indsendelsen lykkedes, men Crossref returnerede en eller flere advarsler: {$param}"
+
+#, fuzzy
+msgid "plugins.importexport.common.missingRequirements"
+msgstr "Plugin-krav ikke efterkommet"
+
+#, fuzzy
+msgid "plugins.importexport.common.register.error.mdsError"
+msgstr "Registreringen blev ikke gennemført! DOI-registreringsserveren sendte en fejlmelding: '{$param}'."
+
+#, fuzzy
+msgid "plugins.importexport.common.register.success"
+msgstr "Registrering gennemført!"
+
+#, fuzzy
+msgid "plugins.importexport.common.settings.form.password"
+msgstr "Adgangskode"
+
+#, fuzzy
+msgid "plugins.importexport.common.settings.form.password.description"
+msgstr "Bemærk: Adgangskoden gemmes i klartekst dvs. ikke-krypteret."
+
+#, fuzzy
+msgid "plugins.importexport.common.settings.form.testMode.label"
+msgstr "Tester"

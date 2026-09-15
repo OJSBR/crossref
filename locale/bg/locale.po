@@ -83,3 +83,27 @@ msgstr "Депозирането не беше успешно. Сървърът 
 #, fuzzy
 msgid "plugins.importexport.crossref.register.success.warning"
 msgstr "Депозирането е успешно, но Crossref върна едно или повече предупреждения: {$param}"
+
+#, fuzzy
+msgid "plugins.importexport.common.missingRequirements"
+msgstr "Изискванията към плъгина не са изпълнени"
+
+#, fuzzy
+msgid "plugins.importexport.common.register.error.mdsError"
+msgstr "Регистрацията не беше успешна! Сървърът за регистрация на DOI върна грешка: '{$param}'."
+
+#, fuzzy
+msgid "plugins.importexport.common.register.success"
+msgstr "Успешна регистрация!"
+
+#, fuzzy
+msgid "plugins.importexport.common.settings.form.password"
+msgstr "Парола"
+
+#, fuzzy
+msgid "plugins.importexport.common.settings.form.password.description"
+msgstr "Моля, обърнете внимание, че паролата ще бъде запазена като обикновен текст, т.е. не е криптирана."
+
+#, fuzzy
+msgid "plugins.importexport.common.settings.form.testMode.label"
+msgstr "Тестване"

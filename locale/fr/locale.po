@@ -1,14 +1,10 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: \n"
-"Report-Msgid-Bugs-To: \n"
-"Last-Translator: OJSBR <eder@sotto.com.br>\n"
-"Language-Team: OJSBR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-07-16T00:00:00+00:00\n"
-"PO-Revision-Date: 2026-07-16T00:00:00+00:00\n"
+"Last-Translator: OJSBR\n"
+"Language-Team: OJSBR\n"
 "Language: fr\n"
 
 
@@ -68,3 +64,21 @@ msgstr "Le dépôt a échoué. Le serveur Crossref a renvoyé une erreur. Veuill
 
 msgid "plugins.importexport.crossref.register.success.warning"
 msgstr "Le dépôt a réussi, mais Crossref a renvoyé un ou plusieurs avertissements : {$param}"
+
+msgid "plugins.importexport.common.missingRequirements"
+msgstr "Exigences non satisfaites pour l'utilisation du plugiciel"
+
+msgid "plugins.importexport.common.register.error.mdsError"
+msgstr "L'enregistrement a échoué ! Le serveur d'enregistrement DOI a retourné une erreur : « {$param} »."
+
+msgid "plugins.importexport.common.register.success"
+msgstr "Enregistrement réussi !"
+
+msgid "plugins.importexport.common.settings.form.password"
+msgstr "Mot de passe"
+
+msgid "plugins.importexport.common.settings.form.password.description"
+msgstr "Veuillez noter que le mot de passe sera enregistré en tant que texte brut (il ne sera pas chiffré)."
+
+msgid "plugins.importexport.common.settings.form.testMode.label"
+msgstr "Test"

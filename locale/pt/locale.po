@@ -1,12 +1,10 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: \n"
-"Report-Msgid-Bugs-To: \n"
-"Last-Translator: OJSBR\n"
-"Language-Team: OJSBR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: OJSBR\n"
+"Language-Team: OJSBR\n"
 "Language: pt\n"
 
 
@@ -66,3 +64,21 @@ msgstr "O depósito não foi bem-sucedido. O servidor da Crossref devolveu um er
 
 msgid "plugins.importexport.crossref.register.success.warning"
 msgstr "O depósito foi bem-sucedido, mas a Crossref devolveu um ou mais avisos: {$param}"
+
+msgid "plugins.importexport.common.missingRequirements"
+msgstr "Requisitos do plugin não foram preenchidos"
+
+msgid "plugins.importexport.common.register.error.mdsError"
+msgstr "O registo não foi bem-sucedido! O servidor de registo DOI retornou um erro: '{$param}'."
+
+msgid "plugins.importexport.common.register.success"
+msgstr "Registo com sucesso!"
+
+msgid "plugins.importexport.common.settings.form.password"
+msgstr "Senha"
+
+msgid "plugins.importexport.common.settings.form.password.description"
+msgstr "Tenha em atenção que a senha será guardada como texto, não encriptada."
+
+msgid "plugins.importexport.common.settings.form.testMode.label"
+msgstr "Testar"

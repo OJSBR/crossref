@@ -64,3 +64,21 @@ msgstr "Het deponeren is mislukt. De Crossref-server gaf een fout terug. Control
 
 msgid "plugins.importexport.crossref.register.success.warning"
 msgstr "Het deponeren is gelukt, maar Crossref gaf een of meer waarschuwingen: {$param}"
+
+msgid "plugins.importexport.common.missingRequirements"
+msgstr "Plugin systeemvereisten voldoen niet"
+
+msgid "plugins.importexport.common.register.error.mdsError"
+msgstr "Registratie niet gelukt. De DOI registratieserver gaf een foutmelding terug: '{$param}'."
+
+msgid "plugins.importexport.common.register.success"
+msgstr "Registratie succesvol!"
+
+msgid "plugins.importexport.common.settings.form.password"
+msgstr "Wachtwoord"
+
+msgid "plugins.importexport.common.settings.form.password.description"
+msgstr "Merk op dat het wachtwoord als tekst wordt opgeslagen; niet versleuteld."
+
+msgid "plugins.importexport.common.settings.form.testMode.label"
+msgstr "(Software of systeem) testen"

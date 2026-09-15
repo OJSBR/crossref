@@ -83,3 +83,27 @@ msgstr "Depunerea nu a reușit. Serverul Crossref a returnat o eroare. Verifica�
 #, fuzzy
 msgid "plugins.importexport.crossref.register.success.warning"
 msgstr "Depunerea a reușit, dar Crossref a returnat una sau mai multe avertizări: {$param}"
+
+#, fuzzy
+msgid "plugins.importexport.common.missingRequirements"
+msgstr "Cerințele pluginului nu au fost îndeplinite"
+
+#, fuzzy
+msgid "plugins.importexport.common.register.error.mdsError"
+msgstr "Înregistrarea nu s-a finalizat cu succes!. Serverul registrator DOI a returnat eroarea: '{$param}'."
+
+#, fuzzy
+msgid "plugins.importexport.common.register.success"
+msgstr "Înregistrare finalizată cu succes!"
+
+#, fuzzy
+msgid "plugins.importexport.common.settings.form.password"
+msgstr "Parolă"
+
+#, fuzzy
+msgid "plugins.importexport.common.settings.form.password.description"
+msgstr "Rețineți că parola va fi salvată ca text simplu, adică nu criptată."
+
+#, fuzzy
+msgid "plugins.importexport.common.settings.form.testMode.label"
+msgstr "Testare"

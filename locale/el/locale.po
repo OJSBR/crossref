@@ -83,3 +83,27 @@ msgstr "Η κατάθεση δεν ολοκληρώθηκε. Ο διακομισ
 #, fuzzy
 msgid "plugins.importexport.crossref.register.success.warning"
 msgstr "Η κατάθεση ολοκληρώθηκε, αλλά το Crossref επέστρεψε μία ή περισσότερες προειδοποιήσεις: {$param}"
+
+#, fuzzy
+msgid "plugins.importexport.common.missingRequirements"
+msgstr "Τα προαπαιτούμενα των Πρόσθετων δεν ικανοποιήθηκαν."
+
+#, fuzzy
+msgid "plugins.importexport.common.register.error.mdsError"
+msgstr "Η εγγραφή απέτυχε! Ο διακομιστής καταχώρησης DOI επέστρεψε σφάλμα: '{$param}'."
+
+#, fuzzy
+msgid "plugins.importexport.common.register.success"
+msgstr "Η εγγραφή ήταν επιτυχής!"
+
+#, fuzzy
+msgid "plugins.importexport.common.settings.form.password"
+msgstr "Κωδικός πρόσβασης"
+
+#, fuzzy
+msgid "plugins.importexport.common.settings.form.password.description"
+msgstr "Παρακαλούμε σημειώστε ότι ο κωδικός θα αποθηκευτεί ως απλό κείμενο και δεν θα είναι κρυπτογραφημένος."
+
+#, fuzzy
+msgid "plugins.importexport.common.settings.form.testMode.label"
+msgstr "Δοκιμαστικό"

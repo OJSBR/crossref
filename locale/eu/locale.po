@@ -83,3 +83,27 @@ msgstr "Gordailua ez da ondo egin. Crossref-en zerbitzariak errore bat itzuli du
 #, fuzzy
 msgid "plugins.importexport.crossref.register.success.warning"
 msgstr "Gordailua ondo egin da, baina Crossref-ek abisu bat edo gehiago itzuli ditu: {$param}"
+
+#, fuzzy
+msgid "plugins.importexport.common.missingRequirements"
+msgstr "Pluginaren eskakizunak ez dira betetzen"
+
+#, fuzzy
+msgid "plugins.importexport.common.register.error.mdsError"
+msgstr "Erregistroa ez da zuzena izan! DOIen erregistro-zerbitzariak errore bat eman du: '{$param}'."
+
+#, fuzzy
+msgid "plugins.importexport.common.register.success"
+msgstr "Erregistroa ongi burutu da!"
+
+#, fuzzy
+msgid "plugins.importexport.common.settings.form.password"
+msgstr "Pasahitza"
+
+#, fuzzy
+msgid "plugins.importexport.common.settings.form.password.description"
+msgstr "Kontuan izan pasahitza testu arrunt gisa gordeko dela, hau da, ez dago enkriptatuta."
+
+#, fuzzy
+msgid "plugins.importexport.common.settings.form.testMode.label"
+msgstr "Probak"

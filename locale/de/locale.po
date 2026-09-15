@@ -1,14 +1,10 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: \n"
-"Report-Msgid-Bugs-To: \n"
-"Last-Translator: OJSBR <eder@sotto.com.br>\n"
-"Language-Team: OJSBR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-07-16T00:00:00+00:00\n"
-"PO-Revision-Date: 2026-07-16T00:00:00+00:00\n"
+"Last-Translator: OJSBR\n"
+"Language-Team: OJSBR\n"
 "Language: de\n"
 
 
@@ -68,3 +64,21 @@ msgstr "Der Eintrag war nicht erfolgreich. Der Crossref-Server hat einen Fehler 
 
 msgid "plugins.importexport.crossref.register.success.warning"
 msgstr "Der Eintrag war erfolgreich, aber Crossref hat eine oder mehrere Warnungen zurückgegeben: {$param}"
+
+msgid "plugins.importexport.common.missingRequirements"
+msgstr "Plugin-Anforderungen nicht erfüllt"
+
+msgid "plugins.importexport.common.register.error.mdsError"
+msgstr "Die Registrierung war nicht erfolgreich! Der DOI-Registrierungsserver hat einen Fehler zurückgeliefert: '{$param}'."
+
+msgid "plugins.importexport.common.register.success"
+msgstr "Registrierung erfolgreich!"
+
+msgid "plugins.importexport.common.settings.form.password"
+msgstr "Passwort"
+
+msgid "plugins.importexport.common.settings.form.password.description"
+msgstr "Bitte beachten Sie, dass das Passwort im Klartext, d.h. unverschlüsselt, gespeichert wird."
+
+msgid "plugins.importexport.common.settings.form.testMode.label"
+msgstr "Testen"

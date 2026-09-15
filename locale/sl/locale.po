@@ -83,3 +83,27 @@ msgstr "Oddaja ni uspela. Strežnik Crossref je vrnil napako. Preverite stanje o
 #, fuzzy
 msgid "plugins.importexport.crossref.register.success.warning"
 msgstr "Oddaja je uspela, vendar je Crossref vrnil eno ali več opozoril: {$param}"
+
+#, fuzzy
+msgid "plugins.importexport.common.missingRequirements"
+msgstr "Zahteve vtičnika niso izpolnjene"
+
+#, fuzzy
+msgid "plugins.importexport.common.register.error.mdsError"
+msgstr "Registracija ni bila uspešna! Registracijski strežnik za DOI je vrnil napako: '{$param}'."
+
+#, fuzzy
+msgid "plugins.importexport.common.register.success"
+msgstr "Registracija je bila uspešna!"
+
+#, fuzzy
+msgid "plugins.importexport.common.settings.form.password"
+msgstr "Geslo"
+
+#, fuzzy
+msgid "plugins.importexport.common.settings.form.password.description"
+msgstr "Prosimo, da se zavedate, da bo geslo shranjeno v prostem besedilu, torej ne bo enkriptirano."
+
+#, fuzzy
+msgid "plugins.importexport.common.settings.form.testMode.label"
+msgstr "Testiranje"

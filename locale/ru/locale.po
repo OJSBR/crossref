@@ -83,3 +83,27 @@ msgstr "Депонирование не удалось. Сервер Crossref в
 #, fuzzy
 msgid "plugins.importexport.crossref.register.success.warning"
 msgstr "Депонирование прошло успешно, но Crossref вернул одно или несколько предупреждений: {$param}"
+
+#, fuzzy
+msgid "plugins.importexport.common.missingRequirements"
+msgstr "Требования модуля не выполнены"
+
+#, fuzzy
+msgid "plugins.importexport.common.register.error.mdsError"
+msgstr "Регистрация завершилась неудачей! Сервер регистрации DOI вернул ошибку: «{$param}»."
+
+#, fuzzy
+msgid "plugins.importexport.common.register.success"
+msgstr "Регистрация прошла успешно!"
+
+#, fuzzy
+msgid "plugins.importexport.common.settings.form.password"
+msgstr "Пароль"
+
+#, fuzzy
+msgid "plugins.importexport.common.settings.form.password.description"
+msgstr "Обратите внимание, что пароль будет сохранен в виде обычного текста, то есть не будет зашифрован."
+
+#, fuzzy
+msgid "plugins.importexport.common.settings.form.testMode.label"
+msgstr "Тестирование"

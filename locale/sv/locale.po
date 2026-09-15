@@ -83,3 +83,27 @@ msgstr "Depositionen misslyckades. Crossref-servern returnerade ett fel. Kontrol
 #, fuzzy
 msgid "plugins.importexport.crossref.register.success.warning"
 msgstr "Depositionen lyckades, men Crossref returnerade en eller flera varningar: {$param}"
+
+#, fuzzy
+msgid "plugins.importexport.common.missingRequirements"
+msgstr "Pluginets krav är inte uppfyllda"
+
+#, fuzzy
+msgid "plugins.importexport.common.register.error.mdsError"
+msgstr "Det gick inte att registrera! Servern för DOI-registrering skickade ett felmeddelande: '{$param}'."
+
+#, fuzzy
+msgid "plugins.importexport.common.register.success"
+msgstr "Registreringen lyckades!"
+
+#, fuzzy
+msgid "plugins.importexport.common.settings.form.password"
+msgstr "Lösenord"
+
+#, fuzzy
+msgid "plugins.importexport.common.settings.form.password.description"
+msgstr "Lösenordet kommer att sparas i text, det är alltså inte krypterad."
+
+#, fuzzy
+msgid "plugins.importexport.common.settings.form.testMode.label"
+msgstr "Testning"

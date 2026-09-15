@@ -83,3 +83,27 @@ msgstr "Göndəriş alınmadı. Crossref serveri xəta qaytardı. Zəhmət olmas
 #, fuzzy
 msgid "plugins.importexport.crossref.register.success.warning"
 msgstr "Göndəriş uğurlu oldu, lakin Crossref bir və ya bir neçə xəbərdarlıq qaytardı: {$param}"
+
+#, fuzzy
+msgid "plugins.importexport.common.missingRequirements"
+msgstr "Qoşma tələbləri qarşılamadı"
+
+#, fuzzy
+msgid "plugins.importexport.common.register.error.mdsError"
+msgstr "Qeydiyyat uğurlu deyil! DOI qeydiyyat serveri bir xəta verdi: '{$param}'."
+
+#, fuzzy
+msgid "plugins.importexport.common.register.success"
+msgstr "Qeydiyyat uğurlu!"
+
+#, fuzzy
+msgid "plugins.importexport.common.settings.form.password"
+msgstr "Şifrə."
+
+#, fuzzy
+msgid "plugins.importexport.common.settings.form.password.description"
+msgstr "Şifrənin düz mətn kimi, yəni şifrələnməmiş olaraq yadda saxlanacağını zəhmət olmasa unutmayın."
+
+#, fuzzy
+msgid "plugins.importexport.common.settings.form.testMode.label"
+msgstr "Sınaq"

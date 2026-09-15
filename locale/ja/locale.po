@@ -83,3 +83,27 @@ msgstr "登録に失敗しました。Crossref サーバーがエラーを返し
 #, fuzzy
 msgid "plugins.importexport.crossref.register.success.warning"
 msgstr "登録は成功しましたが、Crossref から警告が返されました: {$param}"
+
+#, fuzzy
+msgid "plugins.importexport.common.missingRequirements"
+msgstr "プラグインの要件を満たしていない"
+
+#, fuzzy
+msgid "plugins.importexport.common.register.error.mdsError"
+msgstr "登録が成功しませんでした。DOI登録サーバーがエラー「'{$param}'」を返しました。"
+
+#, fuzzy
+msgid "plugins.importexport.common.register.success"
+msgstr "登録が完了しました！"
+
+#, fuzzy
+msgid "plugins.importexport.common.settings.form.password"
+msgstr "パスワード"
+
+#, fuzzy
+msgid "plugins.importexport.common.settings.form.password.description"
+msgstr "パスワードはプレーンテキストとして保存される、つまり暗号化されないので、ご注意ください。"
+
+#, fuzzy
+msgid "plugins.importexport.common.settings.form.testMode.label"
+msgstr "テスト"

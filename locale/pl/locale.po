@@ -83,3 +83,27 @@ msgstr "Depozyt się nie powiódł. Serwer Crossref zwrócił błąd. Sprawdź s
 #, fuzzy
 msgid "plugins.importexport.crossref.register.success.warning"
 msgstr "Depozyt się powiódł, ale Crossref zwrócił jedno lub więcej ostrzeżeń: {$param}"
+
+#, fuzzy
+msgid "plugins.importexport.common.missingRequirements"
+msgstr "Wymagania wtyczki nie zostały spełnione"
+
+#, fuzzy
+msgid "plugins.importexport.common.register.error.mdsError"
+msgstr "Wystąpił błąd przy próbie rejestracji! Serwer DOI zwrócił błąd: '{$param}'."
+
+#, fuzzy
+msgid "plugins.importexport.common.register.success"
+msgstr "Rejestracja zakończona sukcesem!"
+
+#, fuzzy
+msgid "plugins.importexport.common.settings.form.password"
+msgstr "Hasło"
+
+#, fuzzy
+msgid "plugins.importexport.common.settings.form.password.description"
+msgstr "Hasło zostanie zapisane w postaci tekstu, nie zostanie zaszyfrowane."
+
+#, fuzzy
+msgid "plugins.importexport.common.settings.form.testMode.label"
+msgstr "Testowanie"

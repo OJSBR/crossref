@@ -83,3 +83,27 @@ msgstr "Депонирањето не успеа. Серверот на Crossref
 #, fuzzy
 msgid "plugins.importexport.crossref.register.success.warning"
 msgstr "Депонирањето успеа, но Crossref врати едно или повеќе предупредувања: {$param}"
+
+#, fuzzy
+msgid "plugins.importexport.common.missingRequirements"
+msgstr "Барањата за приклучок не се исполнети"
+
+#, fuzzy
+msgid "plugins.importexport.common.register.error.mdsError"
+msgstr "Пријавувањето не беше успешно! Серверот за регистрација на DOI врати грешка: '{$param}'."
+
+#, fuzzy
+msgid "plugins.importexport.common.register.success"
+msgstr "Пријавувањето е успешно!"
+
+#, fuzzy
+msgid "plugins.importexport.common.settings.form.password"
+msgstr "Лозинка"
+
+#, fuzzy
+msgid "plugins.importexport.common.settings.form.password.description"
+msgstr "Имајте предвид дека лозинката ќе биде зачувана како обичен текст, т.е. не криптирана."
+
+#, fuzzy
+msgid "plugins.importexport.common.settings.form.testMode.label"
+msgstr "Тестирање"

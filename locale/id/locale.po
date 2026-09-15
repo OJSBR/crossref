@@ -83,3 +83,27 @@ msgstr "Penyetoran tidak berhasil. Server Crossref mengembalikan galat. Silakan 
 #, fuzzy
 msgid "plugins.importexport.crossref.register.success.warning"
 msgstr "Penyetoran berhasil, tetapi Crossref mengembalikan satu atau beberapa peringatan: {$param}"
+
+#, fuzzy
+msgid "plugins.importexport.common.missingRequirements"
+msgstr "Persyaratan plugin tidak terpenuhi"
+
+#, fuzzy
+msgid "plugins.importexport.common.register.error.mdsError"
+msgstr "Registrasi tidak berhasil! Server registrasi DOI memberikan error: '{$param}'."
+
+#, fuzzy
+msgid "plugins.importexport.common.register.success"
+msgstr "Registrasi berhasil!"
+
+#, fuzzy
+msgid "plugins.importexport.common.settings.form.password"
+msgstr "Katakunci"
+
+#, fuzzy
+msgid "plugins.importexport.common.settings.form.password.description"
+msgstr "Mohon diperhatikan bahwa katakunci akan disimpan dalam bentuk plain text, tidak dienkripsi."
+
+#, fuzzy
+msgid "plugins.importexport.common.settings.form.testMode.label"
+msgstr "Pengujian"

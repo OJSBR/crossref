@@ -83,3 +83,27 @@ msgstr "Gönderim başarısız oldu. Crossref sunucusu bir hata döndürdü. Lü
 #, fuzzy
 msgid "plugins.importexport.crossref.register.success.warning"
 msgstr "Gönderim başarılı oldu, ancak Crossref bir veya daha fazla uyarı döndürdü: {$param}"
+
+#, fuzzy
+msgid "plugins.importexport.common.missingRequirements"
+msgstr "Eklenti gereksinimleri karşılanmadı"
+
+#, fuzzy
+msgid "plugins.importexport.common.register.error.mdsError"
+msgstr "Kayıt başarılı değil! DOI kayıt sunucusu bir hata verdi: '{$param}'."
+
+#, fuzzy
+msgid "plugins.importexport.common.register.success"
+msgstr "Kayıt Başarılı!"
+
+#, fuzzy
+msgid "plugins.importexport.common.settings.form.password"
+msgstr "Şifre"
+
+#, fuzzy
+msgid "plugins.importexport.common.settings.form.password.description"
+msgstr "Şifrenin düz metin olarak, yani şifrelenmemiş olarak kaydedileceğini lütfen unutmayın."
+
+#, fuzzy
+msgid "plugins.importexport.common.settings.form.testMode.label"
+msgstr "Test"
