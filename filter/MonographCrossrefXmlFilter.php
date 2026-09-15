@@ -5,7 +5,10 @@
  *
  * Copyright (c) 2014-2024 Simon Fraser University
  * Copyright (c) 2003-2024 John Willinsky
- * Distributed under the GNU GPL v3. For full terms see the file docs/COPYING.
+ * Copyright (c) 2026 OJSBR (https://ojsbr.com)
+ * Based on the OJS Crossref plugin by PKP, distributed under the MIT License
+ * (see docs/LICENSE-PKP-MIT). This adaptation is distributed under the GNU GPL v3.
+ * For full terms see the file docs/COPYING.
  *
  * @class MonographCrossrefXmlFilter
  *
@@ -109,7 +112,9 @@ class MonographCrossrefXmlFilter extends NativeExportFilter
 
         $headNode = $doc->createElementNS($namespace, 'head');
         $headNode->appendChild($doc->createElementNS($namespace, 'doi_batch_id', htmlspecialchars($context->getData('acronym', $context->getPrimaryLocale()) . '_' . time(), ENT_COMPAT, 'UTF-8')));
-        $headNode->appendChild($doc->createElementNS($namespace, 'timestamp', date('YmdHisv')));
+        // The timestamp is the record version at Crossref: date('v') is always 000,
+        // so two deposits within a second would carry the same version.
+        $headNode->appendChild($doc->createElementNS($namespace, 'timestamp', (new \DateTime())->format('YmdHisv')));
 
         $depositorNode = $doc->createElementNS($namespace, 'depositor');
         $depositorName = $plugin->getSetting($context->getId(), 'depositorName');
@@ -328,21 +333,25 @@ class MonographCrossrefXmlFilter extends NativeExportFilter
         $contributorsNode = null;
         $isFirst = true;
         foreach (is_iterable($authors) ? $authors : [] as $author) {
-            $surname = (string) $author->getData('familyName', $locale);
-            $givenName = (string) $author->getData('givenName', $locale);
-            // Fall back to any available locale if the requested one is empty.
+            // A name made of blanks is empty: Crossref refuses a blank surname.
+            $surname = trim((string) $author->getData('familyName', $locale));
+            $givenName = trim((string) $author->getData('givenName', $locale));
+            // Fall back to the first locale with a name if the requested one is empty.
             if ($surname === '' && $givenName === '') {
-                $familyNames = $author->getData('familyName');
-                $givenNames = $author->getData('givenName');
-                $surname = is_array($familyNames) ? (string) reset($familyNames) : (string) $familyNames;
-                $givenName = is_array($givenNames) ? (string) reset($givenNames) : (string) $givenNames;
+                foreach (array_unique(array_merge(array_keys((array) $author->getData('familyName')), array_keys((array) $author->getData('givenName')))) as $nameLocale) {
+                    $surname = trim((string) $author->getData('familyName', $nameLocale));
+                    $givenName = trim((string) $author->getData('givenName', $nameLocale));
+                    if ($surname !== '' || $givenName !== '') {
+                        break;
+                    }
+                }
             }
             // Crossref requires a surname; if only a given name is available, use it as the surname.
-            if (empty($surname)) {
+            if ($surname === '') {
                 $surname = $givenName;
                 $givenName = '';
             }
-            if (empty($surname)) {
+            if ($surname === '') {
                 continue;
             }
 
@@ -353,10 +362,11 @@ class MonographCrossrefXmlFilter extends NativeExportFilter
             $personNameNode = $doc->createElementNS($namespace, 'person_name');
             $personNameNode->setAttribute('sequence', $isFirst ? 'first' : 'additional');
             $personNameNode->setAttribute('contributor_role', $role);
-            if (!empty($givenName)) {
-                $personNameNode->appendChild($doc->createElementNS($namespace, 'given_name', htmlspecialchars(substr($givenName, 0, 60), ENT_COMPAT, 'UTF-8')));
+            // Crossref limits both names to 60 characters; cut characters, not bytes.
+            if ($givenName !== '') {
+                $personNameNode->appendChild($doc->createElementNS($namespace, 'given_name', htmlspecialchars(mb_substr($givenName, 0, 60), ENT_COMPAT, 'UTF-8')));
             }
-            $personNameNode->appendChild($doc->createElementNS($namespace, 'surname', htmlspecialchars(substr($surname, 0, 60), ENT_COMPAT, 'UTF-8')));
+            $personNameNode->appendChild($doc->createElementNS($namespace, 'surname', htmlspecialchars(mb_substr($surname, 0, 60), ENT_COMPAT, 'UTF-8')));
             if ($orcid = $this->getDepositableOrcid($author)) {
                 $verified = $author->getData('orcidIsVerified') ?? (bool) $author->getData('orcidAccessToken');
                 $orcidNode = $doc->createElementNS($namespace, 'ORCID');
