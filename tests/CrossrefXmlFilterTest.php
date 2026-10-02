@@ -110,6 +110,78 @@ class CrossrefXmlFilterTest extends PKPTestCase
         $this->assertSame(null, $pages(' - 3'));
     }
 
+    /** The text of the title and subtitle nodes the filter builds for a book. */
+    private function bookTitles(array $data, string $locale = 'it'): array
+    {
+        $doc = new DOMDocument('1.0', 'utf-8');
+        $publication = Repo::publication()->newDataObject($data);
+        $titles = $this->filter()->createBookTitlesNode($doc, $publication, $locale);
+        $doc->appendChild($titles);
+
+        return [
+            $titles->getElementsByTagName('title')->item(0)?->textContent,
+            $titles->getElementsByTagName('subtitle')->item(0)?->textContent,
+            $doc->saveXML($titles),
+        ];
+    }
+
+    public function testTheBookTitleKeepsItsPrefix(): void
+    {
+        // OJSBR/crossref#2: a book whose title starts with an article entered as
+        // prefix ("Le", "The") was deposited without it, Crossref did not match the
+        // title it already had for the ISBN, and refused the whole update.
+        [$title] = $this->bookTitles([
+            'prefix' => ['it' => 'Le'],
+            'title' => ['it' => 'tipologie di albero nelle drupacee'],
+        ]);
+        $this->assertSame('Le tipologie di albero nelle drupacee', $title);
+
+        // Without a prefix, the title as it is.
+        [$title, $subtitle] = $this->bookTitles(['title' => ['it' => 'Drupacee']]);
+        $this->assertSame('Drupacee', $title);
+        $this->assertNull($subtitle);
+    }
+
+    public function testTheBookTitleAndSubtitleGoAsTextNotAsEscapedMarkup(): void
+    {
+        // Titles of OMP 3.4+ may carry markup; Crossref must get the words, not "&lt;i&gt;".
+        [$title, $subtitle, $xml] = $this->bookTitles([
+            'prefix' => ['en' => 'The'],
+            'title' => ['en' => 'genus <i>Prunus</i> &amp; its kin'],
+            'subtitle' => ['en' => 'A study of <b>stone</b> fruit'],
+        ], 'en');
+        $this->assertSame('The genus Prunus & its kin', $title);
+        $this->assertSame('A study of stone fruit', $subtitle);
+        $this->assertStringNotContainsString('&lt;', $xml);
+        $this->assertStringContainsString('&amp;', $xml, 'an ampersand still escaped for the XML');
+    }
+
+    public function testTheBookTitleOfTheLocaleIsUsed(): void
+    {
+        [$title] = $this->bookTitles([
+            'prefix' => ['it' => 'Le', 'en' => 'The'],
+            'title' => ['it' => 'drupacee', 'en' => 'stone fruits'],
+        ], 'en');
+        $this->assertSame('The stone fruits', $title);
+    }
+
+    public function testABookWithoutATitleInTheLocaleUsesTheOneItHas(): void
+    {
+        [$title] = $this->bookTitles([
+            'prefix' => ['pt_BR' => 'Os'],
+            'title' => ['pt_BR' => 'caroços'],
+        ], 'en');
+        $this->assertSame('Os caroços', $title, 'the prefix of the same locale as the title');
+    }
+
+    public function testTheBookTitleIsNotBuiltFromTheRawTitleAnyMore(): void
+    {
+        // The regression itself: the raw title field lost the prefix.
+        $source = (string) file_get_contents(dirname(__DIR__) . '/filter/MonographCrossrefXmlFilter.php');
+        $this->assertFalse(strpos($source, "\$publication->getData('title', \$locale)") !== false);
+        $this->assertTrue(strpos($source, '$this->createBookTitlesNode($doc, $publication, $locale)') !== false);
+    }
+
     public function testTheBatchTimestampHasRealMilliseconds(): void
     {
         $source = (string) file_get_contents(dirname(__DIR__) . '/filter/MonographCrossrefXmlFilter.php');
