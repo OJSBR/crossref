@@ -1,10 +1,10 @@
 # Crossref DOI plugin for OMP (Open Monograph Press)
 
 [![OMP](https://img.shields.io/badge/OMP-3.5-brightgreen)](https://pkp.sfu.ca/omp/)
-[![Version](https://img.shields.io/badge/version-1.0.0.7-blue)](version.xml)
+[![Version](https://img.shields.io/badge/version-1.0.0.8-blue)](version.xml)
 [![License](https://img.shields.io/badge/license-GPL--3.0-lightgrey)](LICENSE)
 
-**⬇️ Install package:** [OMP 3.5](https://github.com/OJSBR/crossref/releases/download/1.0.0.7/crossref-1.0.0.7.tar.gz) · [OMP 3.4](https://github.com/OJSBR/crossref/releases/download/1.0.0.7-omp3.4/crossref-1.0.0.7-omp3.4.tar.gz) — or browse all [Releases](../../releases).
+**⬇️ Install package:** [OMP 3.5](https://github.com/OJSBR/crossref/releases/download/1.0.0.8/crossref-1.0.0.8.tar.gz) · [OMP 3.4](https://github.com/OJSBR/crossref/releases/download/1.0.0.8-omp3.4/crossref-1.0.0.8-omp3.4.tar.gz) — or browse all [Releases](../../releases).
 
 Registers monograph and chapter DOIs with [Crossref](https://www.crossref.org/) and exports
 the corresponding Crossref *book deposit* XML (schema 5.3.1).
@@ -30,8 +30,8 @@ like in OJS.
 
 | OMP version | Branch | Plugin release |
 |-------------|--------|----------------|
-| OMP 3.5.x   | [`stable-3_5_0`](../../tree/stable-3_5_0) *(default)* | 1.0.0.7 |
-| OMP 3.4.x   | [`stable-3_4_0`](../../tree/stable-3_4_0) | 1.0.0.7-omp3.4 |
+| OMP 3.5.x   | [`stable-3_5_0`](../../tree/stable-3_5_0) *(default)* | 1.0.0.8 |
+| OMP 3.4.x   | [`stable-3_4_0`](../../tree/stable-3_4_0) | 1.0.0.8-omp3.4 |
 
 Tested on OMP 3.5.0.5 and 3.4.0.10. The DOI registration-agency framework is shared by pkp-lib and has
 the same contract in OMP 3.4 and 3.5, so both branches share the same implementation.
@@ -95,12 +95,17 @@ are shown per item.
 - **Names:** blanks around a name are removed; a contributor with no name in the deposit locale
   takes the first locale that has one; a given name alone becomes the surname; names are cut to
   Crossref's 60 characters without breaking a character.
+- **Book title:** deposited as the press entered it, **prefix included** ("Le", "The"…), and as
+  plain text (italics and other markup of the title and subtitle are removed, not escaped).
+  Until 1.0.0.7 the prefix was left out, so a re-deposit did not match the title Crossref already
+  had for the ISBN and was refused ([#2](https://github.com/OJSBR/crossref/issues/2)).
 
 ## Tests
 
 - **PHPUnit** (`tests/*Test.php`, on `PKP\tests\PKPTestCase`): the plugin classes against the
   installed PKP, the plugin found by PKP's plugin registry, the contributors node (blank names,
-  fallback locale, UTF-8 cut, ORCID in production and test mode), chapter pages, the batch
+  fallback locale, UTF-8 cut, ORCID in production and test mode), the book title (prefix kept,
+  markup sent as text, title of another locale with its own prefix), chapter pages, the batch
   timestamp and the 38 translations. From the OMP root:
 
   ```bash
@@ -173,8 +178,8 @@ lacuna, integrando-se ao framework nativo (`IDoiRegistrationAgency`).
 
 | Versão do OMP | Branch | Release do plugin |
 |---------------|--------|-------------------|
-| OMP 3.5.x     | [`stable-3_5_0`](../../tree/stable-3_5_0) *(padrão)* | 1.0.0.7 |
-| OMP 3.4.x     | [`stable-3_4_0`](../../tree/stable-3_4_0) | 1.0.0.7-omp3.4 |
+| OMP 3.5.x     | [`stable-3_5_0`](../../tree/stable-3_5_0) *(padrão)* | 1.0.0.8 |
+| OMP 3.4.x     | [`stable-3_4_0`](../../tree/stable-3_4_0) | 1.0.0.8-omp3.4 |
 
 ### O que recebe DOI
 
@@ -207,12 +212,17 @@ lacuna, integrando-se ao framework nativo (`IDoiRegistrationAgency`).
 - **Nomes:** espaços em volta do nome são removidos; contribuidor sem nome no idioma do depósito
   usa o primeiro idioma que tiver; só prenome vira sobrenome; nomes são cortados nos 60 caracteres
   do Crossref sem quebrar caractere.
+- **Título do livro:** depositado como a editora cadastrou, **com o prefixo** ("Le", "The", "Os"…),
+  e como texto simples (itálico e outras marcações do título e do subtítulo são removidos, não
+  escapados). Até a 1.0.0.7 o prefixo ficava de fora, e o redepósito não batia com o título que o
+  Crossref já tinha para o ISBN e era recusado ([#2](https://github.com/OJSBR/crossref/issues/2)).
 
 ### Testes
 
 PHPUnit em `tests/`: classes do plugin
 contra o PKP instalado, nó de contribuidores (nomes em branco, idioma de recuo, corte UTF-8, ORCID
-em produção e em teste), páginas do capítulo, `timestamp` do lote e as 38 traduções. Verificado no
+em produção e em teste), título do livro (prefixo mantido, marcação enviada como texto, título de
+outro idioma com o próprio prefixo), páginas do capítulo, `timestamp` do lote e as 38 traduções. Verificado no
 OMP 3.5.0.5: o XML de três livros publicados com 4 e 5 capítulos (DOIs só em memória, nada
 depositado) valida contra o schema do Crossref, também como obra organizada e com sobrenome feito
 de um espaço, que reprovava antes da 1.0.0.6. Spec Cypress em `cypress/tests/functional/`: Crossref

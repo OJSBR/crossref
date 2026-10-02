@@ -191,11 +191,7 @@ class MonographCrossrefXmlFilter extends NativeExportFilter
         }
 
         // 2. titles (required)
-        $bookMetadataNode->appendChild($this->createTitlesNode(
-            $doc,
-            $publication->getData('title', $locale),
-            $publication->getData('subtitle', $locale)
-        ));
+        $bookMetadataNode->appendChild($this->createBookTitlesNode($doc, $publication, $locale));
 
         // 3. publication_date (at least one required)
         $bookMetadataNode->appendChild($this->createPublicationDateNode(
@@ -418,11 +414,52 @@ class MonographCrossrefXmlFilter extends NativeExportFilter
     }
 
     /**
+     * Create and return the 'titles' node of the book.
+     *
+     * @param \DOMDocument $doc
+     * @param \APP\publication\Publication $publication
+     * @param string $locale
+     *
+     * @return \DOMElement
+     */
+    public function createBookTitlesNode($doc, $publication, $locale)
+    {
+        // The title as the press entered it, prefix included ("Le", "The"...): a
+        // deposit without the prefix does not match the title Crossref already has
+        // for the ISBN, and the whole update is refused (OJSBR/crossref#2). As text,
+        // because the title and subtitle may carry markup (italics) that would
+        // otherwise reach Crossref as escaped tags.
+        //
+        // The same rule as Publication::getLocalizedTitle($locale, 'text'), which is
+        // not called because its locale fallback asks the request for its context:
+        // deposits run in queue jobs, where the request may have no router.
+        $titles = (array) $publication->getData('title');
+        $titleLocale = !empty($titles[$locale]) ? $locale : null;
+        if ($titleLocale === null) {
+            foreach ($titles as $candidate => $value) {
+                if (!empty($value)) {
+                    $titleLocale = $candidate;
+                    break;
+                }
+            }
+        }
+        $text = fn ($value) => trim(htmlspecialchars_decode(strip_tags((string) $value)));
+        $title = $titleLocale === null ? '' : $text($titles[$titleLocale]);
+        $prefix = $titleLocale === null ? '' : trim((string) $publication->getData('prefix', $titleLocale));
+        if ($prefix !== '') {
+            $title = $prefix . ' ' . $title;
+        }
+        $subtitle = $titleLocale === null ? '' : $text($publication->getData('subtitle', $titleLocale));
+
+        return $this->createTitlesNode($doc, $title, $subtitle !== '' ? $subtitle : null);
+    }
+
+    /**
      * Create and return a 'titles' node.
      *
      * @param \DOMDocument $doc
      * @param string $title
-     * @param string|null $subtitle
+     * @param null|string $subtitle
      *
      * @return \DOMElement
      */
